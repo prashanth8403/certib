@@ -40,12 +40,12 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">
+                            <a class="nav-link" href="login.aspx">
                                 <i class="material-icons">perm_identity</i> Login
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="About.aspx">
                                 <i class="material-icons">info</i> About
                             </a>
                         </li>
