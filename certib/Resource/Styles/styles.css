@@ -15165,6 +15165,14 @@ footer {
     }
 }
 
+
+
+.blue-box {
+    background: linear-gradient(180deg, rgba(23,104,182,1) 0%, rgba(29,41,124,1) 100%);
+}
+
+
+/*
 .certvalid {
     background-image: url("../../Resource/Images/bg12.jpg");
 }
@@ -15365,103 +15373,49 @@ button {
 .certnum:focus {
     outline: none;
 }
+*/
 
 .body-back {
     background: rgb(238,174,202);
     background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
-.aboutcontainer {
-    width: 1340px;
-    height: 500px;
-    margin: 150px auto 0px;
-    background-color:transparent;
+.profile-dora{
+    background-image: url("../../Resource/Images/p1.png");
+}
+
+.profile-minnie {
+    background-image: url("../../Resource/Images/p2.png");
+}
+
+.profile-nobita {
+    background-image: url("../../Resource/Images/p3.jpg");
+}
+
+.image-container {
+    height: 250px;
+    width: 250px;
     display: inline-grid;
-    right: 0;
-    
-}
-
-.cont1 {
-    height: 250px;
-    width: 250px;
-    margin-left: 100px;
-    display: inline-grid;
-    background-image: url("../../Resource/Images/sushma1.jpg");
-    background-position-x: -160px;
-    background-position-y: -400px;
+   
     border-radius: 50%;
-    -webkit-box-shadow: -1px 1px 104px -29px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 104px -29px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 104px -29px rgba(0,0,0,0.75);
 }
 
-.cont2 {
-    background-color: white;
-    height: 250px;
-    width: 250px;
-    margin-left: 540px;
-    margin-top: -258px;
-    display: inline-flex;
-    background-image: url("../../Resource/Images/sandra.jpg");
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-box-shadow: -1px 1px 104px -29px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 104px -29px rgba(0,0,0,0.75);
-    box-shadow: -1px 1px 104px -29px rgba(0,0,0,0.75);
-}
-
-.cont3 {
-    background-color: white;
-    height: 250px;
-    width: 250px;
-    margin-left: 980px;
-    margin-top: -267px;
-    margin-right: 80px;
-    background-image: url("../../Resource/Images/prashanth.jpeg");
-    background-position-x: -50px;
-    background-position-y: -410px;
-    background-size: 300px 400px;
-    border-radius: 50%;
-    -webkit-box-shadow: -1px 1px 104px -29px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 104px -29px rgba(0,0,0,0.75);
-    box-shadow: -1px 1px 104px -29px rgba(0,0,0,0.75);
-}
-
-.txt1 {
+.text-container {
     height: 200px;
-    width: 400px;
-    margin-left: 30px;
+    width: 100%;
+    position:center;
     background-color: white;
     border-radius: 5px;
-    -webkit-box-shadow: -1px 1px 34px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 34px -10px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 34px -10px rgba(0,0,0,0.75);
 }
 
-.txt2 {
-    height: 200px;
-    width: 400px;
-    margin-left: 474px;
-    background-color: white;
-    margin-top: -207px;
-    border-radius: 5px;
-    -webkit-box-shadow: -1px 1px 34px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 34px -10px rgba(0,0,0,0.75);
-    box-shadow: -1px 1px 34px -10px rgba(0,0,0,0.75);
+.profile-container{
+    width:100%;
+    border-radius:5px;
+    margin-top:50px;
 }
 
-.txt3 {
-    height: 200px;
-    width: 400px;
-    margin-left: 920px;
-    margin-top: -215px;
-    background-color: white;
-    border-radius: 5px;
-    -webkit-box-shadow: -1px 1px 34px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 34px -10px rgba(0,0,0,0.75);
-    box-shadow: -1px 1px 34px -10px rgba(0,0,0,0.75);
-}
 
 .name-prop {
     text-align: center;
