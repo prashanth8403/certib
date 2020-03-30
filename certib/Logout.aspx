@@ -27,34 +27,18 @@
                             <a style="font-family: Calibri; color: #363491; font-size: 22px; font-weight: 600">INSTITUTE OF TECHNOLOGY</a>
                         </div>
                     </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="Default.html" onclick="scrollToDownload()">
-                                <i class="material-icons">home</i>Home
-                        </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Login.html" onclick="scrollToDownload()">
-                                <i class="material-icons">perm_identity</i> Login
-                        </a>
-                        </li>
-                    </ul>
+                   
                 </div>
             </div>
         </nav>
-        <div class="page-header" style="height: 100vh; background-image: url('Resource/Images/bg11.jpg');">
-            <div class="container">
-                <h2 style="text-align: center">You have been successfully logged out</h2>
-            </div>
+        <div class="page-header" style="height:100vh;background-color:antiquewhite">
+        <div class="container">
+            <h1 style="text-align:center;color:black"><b>Thank You!</b></h1>
+            <img src="Resource/Images/tick.png" alt="tick" style="height:100px;width:100px;margin-left:500px">
+            <h3 style="text-align:center;color:black">You have been successfully logged out</h3>
+            <a href="Default.aspx" style="margin-left:470px;color:green"><u><b>Go back to home page</b></u></a>
         </div>
+    </div>
     </form>
 </body>
 </html>

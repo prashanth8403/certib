@@ -1,3 +1,33 @@
+
+.footer_tab {
+    position: center;
+    width: 100%;
+    min-width: 200px;
+    height: 250px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social_tab {
+    float: right;
+    height: 100px;
+    padding: 10px;
+    width: 100%;
+    min-width: 100px;
+    margin-left: 70%;
+}
+
+
+
+.circle-icon {
+    background: white;
+    padding: 5px 5px 5px;
+    border-radius: 10%;
+}
+
+
+
 .feature-tab {
     position:center;
     width:100%;

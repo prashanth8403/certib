@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link href="Resource/Styles/styles.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -123,16 +123,47 @@
             </div>
         </div>
 
-        <footer class="footer">
+        <footer class="footer" style="background-color:darkgray">
             <div class="container">
-                <nav>
-                    <a href="#about">About Us</a> |
-                <a href="#terms">Terms of Use</a> |
-                <a href="#privacy">Privacy Policy</a> |
-                <a href="#contact">Contact</a> |
-                <a href="#link5">Link5</a> |
-                <a href="#link6">Link6</a>
-                </nav>
+                <div class="container-fluid text-center">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="footer_tab">
+                                     <address style="text-align:left">
+                                            <h3 style="color:black"><b>CONTACT US</b></h3>
+                                            <h4 style="color:black">
+                                            <i class="material-icons">location_on</i>&emsp;&nbsp;BMSIT&M<br>
+                                            &emsp;&emsp;&ensp;Avalahalli<br>
+                                            &emsp;&emsp;&ensp;Bangalore<br>
+                                            </h4>
+                                             <br>
+                                            <a href="tel:+919876543210" style="color:black"><i class="material-icons">phone</i>&emsp;&ensp;9876543210</a>
+                                            <br>
+                                            <br>
+                                            <a href="mailto:contact@bmsit.in" style="color:black"><i class="material-icons">email</i>&emsp;&ensp;contact@bmsit.in</a>
+
+                                    </address>
+                               </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer_tab" style="float:right">
+                                     <h3 style="color:black"><b>ABOUT US</b></h3>
+                                     <h4 style="color:black">Content goes here</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="social_tab">
+                                <a href="#" style="color:black"><i class="fa fa-facebook fa-2x circle-icon"></i></a>&nbsp;
+                                <a href="#" style="color:black"><i class="fa fa-twitter fa-2x circle-icon"></i></a>&nbsp;
+                                <a href="#" style="color:black"><i class="fa fa-google fa-2x circle-icon"></i></a>&nbsp;
+                                <a href="#" style="color:black"><i class="fa fa-linkedin fa-2x circle-icon"></i></a>&nbsp;
+                                <a href="#" style="color:black"><i class="fa fa-instagram fa-2x circle-icon"></i></a>&nbsp;
+
+                            </div>
+                        </div>
+                            
+
+            </div>
             </div>
         </footer>
 
