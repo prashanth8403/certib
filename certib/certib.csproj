@@ -69,7 +69,6 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="Default.html" />
     <Content Include="Login.aspx" />
     <Content Include="login.html" />
     <Content Include="Logout.aspx" />
