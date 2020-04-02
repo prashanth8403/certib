@@ -1,12 +1,47 @@
 
-.footer_tab {
-    position: center;
-    width: 100%;
-    min-width: 200px;
-    height: 250px;
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
+
+.footer-header{
+    color:#fff;
+    font-family:Arial;
+    font-weight:600;
+    font-size:20px;
+}
+
+
+.footer-text{
+    color:#999;
+    font-size:16px;
+}
+.footer-links a:hover {
+    
+    color: #d2d2d2;
+}
+
+
+
+.footer-links a{
+
+    color:#03e997;
+    font-size:16px;
+}
+
+.ending-div {
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+    padding-bottom:-50px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: rgb(40, 40, 40);
+    bottom: -100px;
+    min-height: 300px;
 }
 
 .social_tab {
@@ -29,14 +64,14 @@
 
 
 .feature-tab {
-    position:center;
-    width:100%;
+    position: center;
+    width: 100%;
     min-width: 300px;
     height: 150px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: darkgray;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -15410,7 +15445,7 @@ button {
     background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
-.profile-dora{
+.profile-dora {
     background-image: url("../../Resource/Images/p1.png");
 }
 
@@ -15426,7 +15461,6 @@ button {
     height: 250px;
     width: 250px;
     display: inline-grid;
-   
     border-radius: 50%;
     box-shadow: -1px 1px 104px -29px rgba(0,0,0,0.75);
 }
@@ -15434,16 +15468,16 @@ button {
 .text-container {
     height: 200px;
     width: 100%;
-    position:center;
+    position: center;
     background-color: white;
     border-radius: 5px;
     box-shadow: -1px 1px 34px -10px rgba(0,0,0,0.75);
 }
 
-.profile-container{
-    width:100%;
-    border-radius:5px;
-    margin-top:50px;
+.profile-container {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 50px;
 }
 
 
