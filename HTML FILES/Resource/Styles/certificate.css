@@ -63,7 +63,6 @@
     margin: auto;
     height: 400px;
     width: 1200px;
-    
 }
 
 .text-center {
@@ -73,7 +72,6 @@
 }
 
 .text-head {
-   
     font-family: 'Comic Sans MS';
     font-size: 40px;
 }
@@ -93,9 +91,9 @@
     font-weight: bold;
 }
 
-.name-holder:focus {
-    outline: none;
-}
+    .name-holder:focus {
+        outline: none;
+    }
 
 input[type="text"] {
     width: 900px;
@@ -127,12 +125,10 @@ input[type="text"] {
     text-align: center;
 }
 
-.right-text-box:focus {
-    outline: none;
-}
+    .right-text-box:focus {
+        outline: none;
+    }
 
 .left-text-box:focus {
     outline: none;
-
 }
-
