@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link href="Resource/Styles/DashStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="side-nav">
+        <a class="nav-link nav-link-active" href="#" style="margin-top:50px;">
+            <i class="material-icons">home</i>&nbsp;&nbsp;&nbsp; Home
+        </a>
+        <button class="nav-link nav-link-active dropdown-btn">
+            <i class="material-icons">arrow_drop_down</i>&nbsp;&nbsp;&nbsp; Certificate
+        </button>
+        <div class="dropdown-container">
+            <a class="nav-link nav-link-active" href="#">Subportion 1</a>
+            <a class="nav-link nav-link-active" href="#">Subportion 2</a>
+            <a class="nav-link nav-link-active" href="#">Subportion 3</a>
+        </div>
+        <a class="nav-link nav-link-active" href="#">
+            <i class="material-icons">settings</i>&nbsp;&nbsp;&nbsp; Settings
+        </a>
+        <a class="nav-link nav-link-active" href="#">
+            <i class="material-icons">info</i>&nbsp;&nbsp;&nbsp; About
+        </a>
+        <a class="nav-link nav-link-active" href="#">
+            <i class="material-icons">cancel</i>&nbsp;&nbsp;&nbsp; Logout
+        </a>
+    </div>
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;               
+                if (dropdownContent.style.display === "block") {                
+                    dropdownContent.style.display = "none";
+                }
+                else {                   
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
