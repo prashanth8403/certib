@@ -1,4 +1,6 @@
-/*---------------------------------Dashboard sidenav 6/4/2020-----------------------------------------------*/
+
+
+/*--------------------------------- Dashboard::SideNavigation (6/4/2020) #DORA --------------------------------------------*/
 
 .logo {
     background-color: #fff;
@@ -13,14 +15,13 @@
 
 li {
     list-style: none;
-    
     margin-left: 23px;
     margin-right: 23px;
 }
 
 ul {
     list-style-position: inside;
-    padding-left:0px;
+    padding-left: 0px;
 }
 
 .nav-link {
@@ -28,35 +29,68 @@ ul {
     display: block;
     font-family: Roboto;
     font-size: 15px;
+    border-radius: 4px;
     color: grey;
     margin-top: 15px;
     background-color: #fff;
     transition: 0.3s;
 }
 
-.nav-link:hover {
-   background-color:rgba(80,80,80,0.5);
+    .nav-link:hover {
+       
+        background-color: rgba(212, 217, 214,0.5);
+    }
+
+
+#DropBlock > #Option1:target {
+    display:block;
+    background: linear-gradient(60deg, rgba(58,123,223,1) 0%, rgba(0,210,255,1) 100%);
+    color: white;
+    box-shadow: 0px 1px 10px 0px rgba(31,163,238,1);
+}
+
+#Option2:target {
+    
+    background: linear-gradient(60deg, rgba(58,123,223,1) 0%, rgba(0,210,255,1) 100%);
+    color: white;
+    display: block;
+    box-shadow: 0px 1px 10px 0px rgba(31,163,238,1);
+}
+
+#Option3:target {
+    background: linear-gradient(60deg, rgba(58,123,223,1) 0%, rgba(0,210,255,1) 100%);
+    color: white;
+    box-shadow: 0px 1px 10px 0px rgba(31,163,238,1);
 }
 
 
-.nav-link-active {
-    background: rgb(58,123,223);
+
+#Logout:target {
     background: linear-gradient(60deg, rgba(58,123,223,1) 0%, rgba(0,210,255,1) 100%);
     color: white;
-    -webkit-box-shadow: 0px 1px 10px 0px rgba(31,163,238,1);
-    -moz-box-shadow: 0px 1px 10px 0px rgba(31,163,238,1);
     box-shadow: 0px 1px 10px 0px rgba(31,163,238,1);
-    border-radius: 4px;
 }
 
-.nav-link-active a:visited, a:active, a:focus {
-    background: rgb(58,123,223);
+#About:target {
     background: linear-gradient(60deg, rgba(58,123,223,1) 0%, rgba(0,210,255,1) 100%);
     color: white;
-    -webkit-box-shadow: 0px 1px 10px 0px rgba(31,163,238,1);
-    -moz-box-shadow: 0px 1px 10px 0px rgba(31,163,238,1);
     box-shadow: 0px 1px 10px 0px rgba(31,163,238,1);
-    border-radius: 4px;
+}
+
+#Settings:target {
+    background: linear-gradient(60deg, rgba(58,123,223,1) 0%, rgba(0,210,255,1) 100%);
+    color: white;
+    box-shadow: 0px 1px 10px 0px rgba(31,163,238,1);
+}
+
+#Home:target {
+    background: linear-gradient(60deg, rgba(58,123,223,1) 0%, rgba(0,210,255,1) 100%);
+    color: white;
+    box-shadow: 0px 1px 10px 0px rgba(31,163,238,1);
+}
+
+.nav-link-active:hover{
+    color:#fff;
 }
 
 .side-nav i {
@@ -70,11 +104,14 @@ ul {
     background-color: #fff;
 }
 
-    .dropdown-container:hover {
+    .dropdown-container a:hover {
         cursor: pointer;
     }
-/*-------------------------------------------------------------------------------------*/
 
+.dropdown-container:target {
+    display: block;
+}
+/*-----------------------------------------------------------------------------------------------------------------------*/
 .card {
     font-size: .875rem;
 }
