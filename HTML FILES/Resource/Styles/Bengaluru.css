@@ -34,7 +34,12 @@ ul {
     transition: 0.3s;
 }
 
-.nav-link-active:hover {
+.nav-link:hover {
+   background-color:rgba(80,80,80,0.5);
+}
+
+
+.nav-link-active {
     background: rgb(58,123,223);
     background: linear-gradient(60deg, rgba(58,123,223,1) 0%, rgba(0,210,255,1) 100%);
     color: white;
