@@ -1,3 +1,113 @@
+.white_box {
+    margin-top:20px;
+    -webkit-box-shadow: -1px 16px 15px 1px rgba(128,128,128,1);
+    -moz-box-shadow: -1px 16px 15px 1px rgba(128,128,128,1);
+    box-shadow: -1px 16px 15px 1px rgba(128,128,128,1);
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding:20px 20px 20px 20px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    -webkit-box-shadow: -1px 10px 26px 1px rgba(191,181,191,1);
+    -moz-box-shadow: -1px 10px 26px 1px rgba(191,181,191,1);
+    box-shadow: -1px 10px 26px 1px rgba(191,181,191,1);
+    padding: 20px 20px 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: small;
+}
+
+
+td {
+    padding: 20px 20px 20px 20px;
+}
+th {
+    padding: 20px 20px 20px 20px;
+}
+
+table thead {
+    background-color:rebeccapurple;
+    color:white;
+}
+
+table tbody tr:nth-child(odd) td{
+    background-color:white;
+}
+
+table tbody tr:nth-child(even) td{
+    background-color:thistle;
+}
+
+
+
+table thead tr th:first-child {
+    -moz-border-radius-topleft: 20px;
+    -webkit-border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+table thead tr th:last-child {
+    -moz-border-radius-topright: 20px;
+    -webkit-border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+table tbody tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+table tbody tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.scroll {
+    overflow-y: auto;
+    height: 300px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.busy{
+    padding:5px 20px 5px 20px ;
+    color:white;
+    background-color:red;
+    border-radius:25px;
+}
+
+.available {
+    padding: 5px 5px 5px 5px ;
+    color: white;
+    background-color: green;
+    border-radius: 25px;
+}
+
+.absent {
+    padding: 5px 14px 5px 14px ;
+    color: white;
+    background-color: gold;
+    border-radius: 25px;
+}
 
 
 .footer-header{
