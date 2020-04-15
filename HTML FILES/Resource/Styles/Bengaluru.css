@@ -18809,3 +18809,57 @@ label {
         display: none !important;
     }
 }
+
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-right: -15px;
+    // margin-top: 20px;
+    //z-index: 1;
+    align-content: center;
+    width: 100%;
+    padding: 10px 10px 10px 200px;
+}
+
+.colomn {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding: 10px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.intimation-card {
+    text-align: justify;
+    position: center;
+    width: 100%;
+    margin-top: 15px;
+    height: 175px;
+    font-family: Roboto;
+    color: darkgray;
+    font-size: 26px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.first {
+    background: linear-gradient(117deg, rgba(30,217,218,1) 24%, rgba(31,184,196,1) 57%);
+    box-shadow: 2px 17px 33px -7px rgba(161,228,247,1);
+}
+
+.second {
+    background: linear-gradient(117deg, rgba(208,24,191,1) 19%, rgba(232,14,117,1) 69%);
+    box-shadow: 2px 17px 33px -7px rgba(241,161,245,1);
+}
+
+.third {
+    background: linear-gradient(117deg, rgba(244,199,64,1) 19%, rgba(242,73,12,1) 69%);
+    box-shadow: 2px 17px 33px -7px rgba(255,227,125,1);
+}
