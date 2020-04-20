@@ -1,4 +1,5 @@
 
+/*-------------------------[Home page icon's][12-APR20]----------------------------*/
 .material-icons.md-18 {
     font-size: 18px;
 }
@@ -15,7 +16,7 @@
     font-size: 65px;
 }
 
-
+/*--------------------------------------------------------------------------------*/
 
 
 
@@ -130,14 +131,12 @@ table tbody tr:last-child td:last-child {
     border-radius: 25px;
 }
 
-
 .footer-header{
     color:#fff;
     font-family:Arial;
     font-weight:600;
     font-size:20px;
 }
-
 
 .footer-text{
     color:#999;
@@ -147,8 +146,6 @@ table tbody tr:last-child td:last-child {
     
     color: #d2d2d2;
 }
-
-
 
 .footer-links a{
 
@@ -185,12 +182,13 @@ footer {
 }
 
 
-
 .circle-icon {
     background: white;
     padding: 5px 5px 5px;
     border-radius: 10%;
 }
+
+/******************************  HOME PAGE FEATURE TAB *********************************/
 
 
 .feature-tab h4{
@@ -212,14 +210,7 @@ footer {
 }
 
 
-
-.carousel.carousel-full-nagivation .left {
-    cursor: url(../../img/arrow-left.png),url(../../img/arrow-left.cur),default !important
-}
-
-.carousel.carousel-full-nagivation .right {
-    cursor: url(../../img/arrow-right.png),url(../../img/arrow-right.cur),default !important
-}
+/*------------------------- [ OLD ARCHIVE ] --------------------------------*/
 
 .card {
     font-size: .875rem
@@ -413,7 +404,6 @@ sup {
 a {
     text-decoration: none;
     background-color: transparent;
-    -webkit-text-decoration-skip: objects
 }
 
     a:hover {
