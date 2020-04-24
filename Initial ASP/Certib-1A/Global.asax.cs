@@ -15,6 +15,8 @@ namespace Certib_1A
         {
             routes.MapPageRoute("Home", "Home", "~/Default.aspx");
             routes.MapPageRoute("Login", "Login", "~/Login.aspx");
+            routes.MapPageRoute("Dashboard/Mypage", "Dashboard/Mypage", "~/Dashboard/Mypage.aspx");
+            routes.MapPageRoute("Dashboard/Temp", "Dashboard/Temp", "~/Dashboard/temp.aspx");
         }
 
         protected void Session_Start(object sender, EventArgs e)

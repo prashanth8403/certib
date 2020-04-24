@@ -16,7 +16,7 @@ namespace Certib_1A
 
         protected void LoginButton_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Dashboard/Mypage#Home");
         }
     }
 }

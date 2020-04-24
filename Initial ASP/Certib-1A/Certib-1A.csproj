@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dashboard\Mypage.aspx" />
+    <Content Include="Dashboard\temp.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
@@ -74,6 +76,7 @@
     <Content Include="Resource\Images\certificate\ribbon3.png" />
     <Content Include="Resource\Images\certificate\vector-bottom.jpg" />
     <Content Include="Resource\Images\certificate\vector-top.jpg" />
+    <Content Include="Resource\Images\favicon.ico" />
     <Content Include="Resource\Images\information\p1.png" />
     <Content Include="Resource\Images\information\p2.png" />
     <Content Include="Resource\Images\information\p3.jpg" />
@@ -106,6 +109,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard\Dashboard.Master.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.Master.designer.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Mypage.aspx.cs">
+      <DependentUpon>Mypage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Mypage.aspx.designer.cs">
+      <DependentUpon>Mypage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\temp.aspx.cs">
+      <DependentUpon>temp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\temp.aspx.designer.cs">
+      <DependentUpon>temp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,6 +151,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dashboard\Dashboard.Master" />
     <None Include="packages.config" />
     <Content Include="Resource\scss\material-kit.scss" />
     <Content Include="Resource\scss\material-kit\bootstrap\scss\bootstrap-grid.scss" />
@@ -305,7 +330,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dashboard\" />
     <Folder Include="Documents\" />
   </ItemGroup>
   <PropertyGroup>
