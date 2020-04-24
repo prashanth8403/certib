@@ -11,6 +11,11 @@ namespace Certib_1A
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // CLEAR ALL THE SESSIONS
+        }
+
+        protected void LoginButton_Click(object sender, EventArgs e)
+        {
 
         }
     }

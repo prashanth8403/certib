@@ -68,42 +68,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
-    <Content Include="Resource\Images\bg.jpg" />
-    <Content Include="Resource\Images\bg10.jpg" />
-    <Content Include="Resource\Images\bg11.jpg" />
-    <Content Include="Resource\Images\bg12.jpg" />
-    <Content Include="Resource\Images\bg13.jpg" />
-    <Content Include="Resource\Images\bg14.png" />
-    <Content Include="Resource\Images\bg2.jpg" />
-    <Content Include="Resource\Images\bg3.jpg" />
-    <Content Include="Resource\Images\bg4.jpg" />
-    <Content Include="Resource\Images\bg5.jpg" />
-    <Content Include="Resource\Images\bg6.jpg" />
-    <Content Include="Resource\Images\bg7.jpg" />
-    <Content Include="Resource\Images\bg8.jpg" />
-    <Content Include="Resource\Images\bg9.jpg" />
-    <Content Include="Resource\Images\load.gif" />
-    <Content Include="Resource\Images\load1.gif" />
-    <Content Include="Resource\Images\load2.gif" />
-    <Content Include="Resource\Images\load3.gif" />
-    <Content Include="Resource\Images\load4.gif" />
-    <Content Include="Resource\Images\load5.gif" />
+    <Content Include="Resource\Images\certificate\bg14.png" />
+    <Content Include="Resource\Images\certificate\ribbon3.png" />
+    <Content Include="Resource\Images\certificate\vector-bottom.jpg" />
+    <Content Include="Resource\Images\certificate\vector-top.jpg" />
+    <Content Include="Resource\Images\information\p1.png" />
+    <Content Include="Resource\Images\information\p2.png" />
+    <Content Include="Resource\Images\information\p3.jpg" />
     <Content Include="Resource\Images\logo.png" />
     <Content Include="Resource\Images\main-bg\bg1.jpg" />
+    <Content Include="Resource\Images\main-bg\bg13.jpg" />
     <Content Include="Resource\Images\main-bg\bg2.jpg" />
     <Content Include="Resource\Images\main-bg\bg3.jpg" />
+    <Content Include="Resource\Images\main-bg\bg4.jpg" />
     <Content Include="Resource\Images\main-bg\bg5.jpg" />
-    <Content Include="Resource\Images\main-bg\bg6.jpg" />
     <Content Include="Resource\Images\main-bg\bg6a.jpg" />
-    <Content Include="Resource\Images\p1.png" />
-    <Content Include="Resource\Images\p2.png" />
-    <Content Include="Resource\Images\p3.jpg" />
-    <Content Include="Resource\Images\ribbon3.png" />
-    <Content Include="Resource\Images\temp.jpg" />
-    <Content Include="Resource\Images\tick.png" />
-    <Content Include="Resource\Images\vector-bottom.jpg" />
-    <Content Include="Resource\Images\vector-top.jpg" />
+    <Content Include="Resource\Images\main-bg\bg7.jpg" />
+    <Content Include="Resource\Images\misc\load.gif" />
+    <Content Include="Resource\Images\misc\load1.gif" />
+    <Content Include="Resource\Images\misc\load2.gif" />
+    <Content Include="Resource\Images\misc\load3.gif" />
+    <Content Include="Resource\Images\misc\load4.gif" />
+    <Content Include="Resource\Images\misc\load5.gif" />
+    <Content Include="Resource\Images\misc\temp.jpg" />
+    <Content Include="Resource\Images\misc\tick.png" />
     <Content Include="Resource\Scripts\core\bootstrap-material-design.min.js" />
     <Content Include="Resource\Scripts\core\jquery.min.js" />
     <Content Include="Resource\Scripts\core\popper.min.js" />
@@ -123,6 +113,9 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -130,11 +123,11 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Resource\Images\bg1.webp" />
     <Content Include="Resource\scss\material-kit.scss" />
     <Content Include="Resource\scss\material-kit\bootstrap\scss\bootstrap-grid.scss" />
     <Content Include="Resource\scss\material-kit\bootstrap\scss\bootstrap-reboot.scss" />
@@ -310,6 +303,10 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dashboard\" />
+    <Folder Include="Documents\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
