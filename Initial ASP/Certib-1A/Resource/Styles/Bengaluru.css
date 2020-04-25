@@ -4,17 +4,22 @@
     CARD1 GRADINETS::
 */
 
-.card1.card.card-stats {
+.card1.card-stats {
     background-image: linear-gradient(to bottom, #f91f1f, #e60035, #d00043, #b6004d, #9a0851);
     box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
 }
 
-.card2.card.card-stats {
+.card-stats {
+    min-height: 160px;
+    max-height: 160px;
+}
+
+.card2.card-stats {
     background-image: linear-gradient(to bottom, #8408e3, #a400e2, #c000e0, #d900de, #f00adc);
     box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
 }
 
-.card3.card.card-stats {
+.card3.card-stats {
     background-image: linear-gradient(to bottom, #3ee127, #35d31f, #2cc517, #23b70f, #18a904);
     box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
 }

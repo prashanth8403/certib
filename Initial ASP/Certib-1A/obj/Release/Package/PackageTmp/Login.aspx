@@ -1,21 +1,29 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Certib_1A.Login" %>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="Resource/Images/logo.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6W6HWNWGV9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6W6HWNWGV9');
+    </script>
+    <!-- TITLE -->
     <title>LOGIN&nbsp&nbsp|&nbsp&nbsp Certib
     </title>
+    <!-- MOBILE VIEW ADJUSTMENT TAG -->
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- FAVICON ICON -->
+    <link rel="icon" type="image/png" href="Resource/Images/logo.png">
+    <!-- FONTS  & ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons|Pacifico&display=swap" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <link href="Resource/Styles/styles.css" rel="stylesheet" />
-
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="Resource/Styles/styles.css" />
 </head>
 
 <body>
@@ -41,12 +49,12 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="scrollToDownload()">
+                        <a class="nav-link" href="Home">
                             <i class="material-icons">home</i>Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="scrollToDownload()">
+                        <a class="nav-link" href="#">
                             <i class="material-icons">info</i> About
                         </a>
                     </li>
@@ -54,12 +62,14 @@
             </div>
         </div>
     </nav>
-    <div class="page-header" style="filter: blur(9px); background-image: url('Resource/Images/main-bg/bg6a.jpg'); ">
+    <div class="page-header" style="filter: blur(5px); background-image: url('Resource/Images/main-bg/bg4.jpg');">
     </div>
-     <div class="container" style="margin-top:-100vh; padding-top:15vh;">
-            <div class="row" >
-                <div class="col-lg-4 col-md-6">
-                    <div class="card card-login"  style="z-index:999;">
+    <form id="LoginPage" runat="server">
+        <div class="container" style="margin-top: -100vh; padding-top: 15vh;">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                    <div class="card card-login">
+                        <!-- LOGIN SECTION -->
                         <div class="card-body" style="min-height: 450px;">
                             <div class="logo">
                                 <br />
@@ -71,7 +81,7 @@
                                         <i class="material-icons">face</i>
                                     </span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="User Id...">
+                                <asp:TextBox ID="_userid" class="form-control" placeholder="User ID..." runat="server"></asp:TextBox>
                             </div>
                             <div class="input-group">
                                 <div class="input-group-prepend">
@@ -79,20 +89,12 @@
                                         <i class="material-icons">mail</i>
                                     </span>
                                 </div>
-                                <input type="email" class="form-control" placeholder="Email...">
-                            </div>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="material-icons">mail</i>
-                                    </span>
-                                </div>
-                                <input type="email" class="form-control" placeholder="Email...">
+                                <asp:TextBox ID="_password" class="form-control" TextMode="Password" placeholder="Email..." runat="server"></asp:TextBox>
                             </div>
                             <div class="text-center">
                                 <br />
                                 <br />
-                                <button class="btn btn-info">Login</button>
+                                <asp:Button ID="LoginButton" class="btn btn-info" runat="server" Text="LOGIN" OnClick="LoginButton_Click" />
                             </div>
                         </div>
                         <br />
@@ -100,6 +102,8 @@
                 </div>
             </div>
         </div>
+    </form>
+    <!-- SCRIPTS -->
     <script src="Resource/Scripts/core/jquery.min.js" type="text/javascript"></script>
     <script src="Resource/Scripts/core/popper.min.js" type="text/javascript"></script>
     <script src="Resource/Scripts/core/bootstrap-material-design.min.js" type="text/javascript"></script>

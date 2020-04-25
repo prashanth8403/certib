@@ -5,15 +5,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="Resource/Images/logo.png">
+
+
+    <!-- -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6W6HWNWGV9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6W6HWNWGV9');
+    </script>
+
+
+    <!-- TITLE -->
     <title>HOME&nbsp&nbsp|&nbsp&nbsp Certib
     </title>
+    <!-- MOBILE VIEW ADJUSTMENT TAG -->
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <!-- FAVICON ICON -->
+    <link rel="icon" type="image/png" href="Resource/Images/logo.png">
+    <!-- FONTS  & ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons|Pacifico&display=swap" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <link href="Resource/Styles/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="Resource/Styles/styles.css" />
 </head>
 
 <body class="index-page sidebar-collapse">
@@ -26,8 +42,8 @@
                             <img id="logoid" src="Resource/Images/logo.png" height="60" />
                         </div>
                         <div style="float: right; padding-top: 10px;">
-                          <a id="bmsit1" class="bmsit-text">BMS</a><br />
-                        <a id="bmsit2" class="bmsit-text-s">INSTITUTE OF TECHNOLOGY</a>
+                            <a id="bmsit1" class="bmsit-text">BMS</a><br />
+                            <a id="bmsit2" class="bmsit-text-s">INSTITUTE OF TECHNOLOGY</a>
                         </div>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +56,7 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="Login.aspx">
+                            <a class="nav-link" href="Login">
                                 <i class="material-icons">perm_identity</i> Login
                             </a>
                         </li>
@@ -53,7 +69,7 @@
                 </div>
             </div>
         </nav>
-        <div class="page-header" style="height: 100vh; background-image: url('Resource/Images/bg13.jpg');">
+        <div class="page-header" style="height: 100vh; background-image: url('Resource/Images/main-bg/bg13.jpg');">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
@@ -62,7 +78,6 @@
                             <h3>A Digital Certificate portal.</h3>
                             <button class="btn btn-warning">Know more</button>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -129,7 +144,6 @@
                                     <p>Content goes here </p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -137,10 +151,46 @@
         </div>
         <div>
             <footer>
-                <hr />
+                <div class="container-fluid text-center" style="margin: 30px;">
+                    <div class="row">
+                        <div class="col-md-4" style="padding-left: 25px; padding-right: 25px;">
+                            <div class="feature-tab">
+                                <br />
+                                <p style="font-size: 17px;">
+                                    This portal provides high data security for personal information.
+                                    The certificates issued from the portal cannot be fabricated as
+                                    we use blockchain technology and provide various levels of authentication.
+                                </p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="col-md-4" style="padding-left: 25px; padding-right: 25px;">
+                            <div class="feature-tab">
+                                <h4 style="color: #00ff90; font-size: 22px;"><b>LINKS</b></h4>
+                                <p>
+                                    The portal can be accessed from all types of devices with varying
+                                        screen sizes. It's highly responsive on all platforms.
+                                </p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="col-md-4" style="padding-left: 25px; padding-right: 25px;">
+                            <div class="feature-tab">
+                                <h4 style="color: #00ff90; font-size: 22px;"><b>LINKS</b></h4>
+                                <p>
+                                    The system automatically generates certificates on completion of
+                                        the event.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <hr />
+                    <a style="color: #fff; float: left;">© 2020 Certib. All Rights Reserved.</a>
+                    <br />
+                </div>
             </footer>
         </div>
-       
         <script src="Resource/Scripts/core/jquery.min.js" type="text/javascript"></script>
         <script src="Resource/Scripts/core/popper.min.js" type="text/javascript"></script>
         <script src="Resource/Scripts/core/bootstrap-material-design.min.js" type="text/javascript"></script>
