@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dashboard\Mypage.aspx" />
+    <Content Include="Dashboard\Settings.aspx" />
     <Content Include="Dashboard\temp.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -100,11 +101,9 @@
     <Content Include="Resource\Scripts\core\bootstrap-material-design.min.js" />
     <Content Include="Resource\Scripts\core\jquery.min.js" />
     <Content Include="Resource\Scripts\core\popper.min.js" />
+    <Content Include="Resource\Scripts\dashboard-util.js" />
     <Content Include="Resource\Scripts\silicon.js" />
     <Content Include="Resource\Styles\Bengaluru.css" />
-    <Content Include="Resource\Styles\certificate.css" />
-    <Content Include="Resource\Styles\certificate2.css" />
-    <Content Include="Resource\Styles\detailform.css" />
     <Content Include="Resource\Styles\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -122,6 +121,13 @@
     </Compile>
     <Compile Include="Dashboard\Mypage.aspx.designer.cs">
       <DependentUpon>Mypage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\temp.aspx.cs">
       <DependentUpon>temp.aspx</DependentUpon>
@@ -320,7 +326,6 @@
     <Content Include="Resource\scss\material-kit\_tooltip.scss" />
     <Content Include="Resource\scss\material-kit\_type.scss" />
     <Content Include="Resource\scss\material-kit\_variables.scss" />
-    <Content Include="Resource\Styles\material-kit.css.map" />
     <None Include="Properties\PublishProfiles\rook-labs - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

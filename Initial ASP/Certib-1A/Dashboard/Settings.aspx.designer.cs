@@ -11,7 +11,7 @@ namespace Certib_1A.Dashboard
 {
 
 
-    public partial class temp
+    public partial class Settings
     {
 
         /// <summary>

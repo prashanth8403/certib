@@ -17,122 +17,105 @@
     <link rel="stylesheet" href="../Resource/Styles/Bengaluru.css" />
 </head>
 
-<body>
+<body onload="InitialLoad()">
     <div class="wrapper" style="height: 100%;">
         <form id="form1" runat="server">
-            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-                <ContentTemplate>
-                    <!-- SIDE NAVIGATION -->
-                    <div class="sidebar">
-                        <!-- LOGO -->
-                        <div class="logo">
-                            <div>
-                                <img src="../Resource/Images/favicon.ico" />
-                                <br />
-                                <br />
-                                <a style="padding-top: 5px;">Certib</a>
-                            </div>
-                        </div>
-                        <div class="sidebar-wrapper" style="background-color: #fff;">
-                            <ul>
-                                <li>
-                                    <a id="Home" onclick="DropDownShrink()" class="nav-link bar" href="Mypage#Home" style="margin-top: 50px;">
-                                        <i class="material-icons">home</i>&nbsp;&nbsp;&nbsp; Home
-                                    </a>
-                                </li>
-                                <li>
+            <!-- SIDE NAVIGATION -->
+            <div class="sidebar">
+                <!-- LOGO -->
+                <div class="logo">
+                    <div>
+                        <img src="../Resource/Images/favicon.ico" />
+                        <br />
+                        <br />
+                        <a style="padding-top: 5px;">Certib</a>
+                    </div>
+                </div>
+                <div class="sidebar-wrapper" style="background-color: #fff;">
+                    <ul>
+                        <li>
+                            <a id="Home" onclick="DropDownShrink()" class="nav-link bar" href="Mypage#Home" style="margin-top: 50px;">
+                                <i class="material-icons">home</i>&nbsp;&nbsp;&nbsp; Home
+                            </a>
+                        </li>
+                        <li>
+                            <li>
+                                <a href='#' onclick='DropDownExpand()' class="nav-link dropdown-btn bar">
+                                    <i class="material-icons">aspect_ratio</i>&nbsp;&nbsp;&nbsp;Certificate&nbsp;<i class="material-icons">arrow_drop_down</i>
+                                </a>
+                            </li>
+                            <div id="DropBlock" class="dropdown-container">
+                                <ul>
                                     <li>
-                                        <a href='javascript:;' onclick='DropDownExpand()' class="nav-link dropdown-btn bar">
-                                            <i class="material-icons">aspect_ratio</i>&nbsp;&nbsp;&nbsp;Certificate&nbsp;<i class="material-icons">arrow_drop_down</i>
+                                        <a id="Option1" class="nav-link bar" href="#Option1">
+                                            <i class="material-icons">view_module</i>&nbsp;&nbsp;&nbsp; Subportion 1
                                         </a>
                                     </li>
-                                    <div id="DropBlock" class="dropdown-container">
-                                        <ul>
-                                            <li>
-                                                <a id="Option1" class="nav-link bar" href="#Option1">
-                                                    <i class="material-icons">view_module</i>&nbsp;&nbsp;&nbsp; Subportion 1
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a id="Option2" class="nav-link bar" href="#Option2">
-                                                    <i class="material-icons">view_module</i>&nbsp;&nbsp;&nbsp; Subportion 2
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a id="Option3" class="nav-link bar" href="#Option3">
-                                                    <i class="material-icons">view_module</i>&nbsp;&nbsp;&nbsp; Subportion 3
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a id="Settings" onclick="DropDownShrink()" class="nav-link bar" href="#Settings">
-                                        <i class="material-icons">settings</i>&nbsp;&nbsp;&nbsp; Settings
-                                    </a>
-                                </li>
-                                <li>
-                                    <a id="About" onclick="DropDownShrink()" class="nav-link bar" href="#About">
-                                        <i class="material-icons">info</i>&nbsp;&nbsp;&nbsp; About
-                                    </a>
-                                </li>
-                                <br />
-                                <br />
-                                <li>
-                                    <a id="Logout" onclick="DropDownShrink()" class="nav-link bar" href="#Logout">
-                                        <i class="material-icons">power_settings_new</i>&nbsp;&nbsp;&nbsp; Logout
-                                    </a>
-                                </li>
-                            </ul>
+                                    <li>
+                                        <a id="Option2" class="nav-link bar" href="#Option2">
+                                            <i class="material-icons">view_module</i>&nbsp;&nbsp;&nbsp; Subportion 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="Option3" class="nav-link bar" href="#Option3">
+                                            <i class="material-icons">view_module</i>&nbsp;&nbsp;&nbsp; Subportion 3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a id="Settings" onclick="DropDownShrink()" class="nav-link bar" href="Settings#Settings">
+                                <i class="material-icons">settings</i>&nbsp;&nbsp;&nbsp; Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a id="About" onclick="DropDownShrink()" class="nav-link bar" href="#About">
+                                <i class="material-icons">info</i>&nbsp;&nbsp;&nbsp; About
+                            </a>
+                        </li>
+                        <br />
+                        <br />
+                        <li>
+                            <a id="Logout" onclick="DropDownShrink()" class="nav-link bar" href="#Logout">
+                                <i class="material-icons">power_settings_new</i>&nbsp;&nbsp;&nbsp; Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-panel">
+                <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+                    <div class="container-fluid">
+                        <div class="navbar-wrapper">
+                            <a class="navbar-brand" href="#rook"><%: Page.Title %></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="navbar-toggler-icon icon-bar"></span>
+                            <span class="navbar-toggler-icon icon-bar"></span>
+                            <span class="navbar-toggler-icon icon-bar"></span>
+                        </button>
+                    </div>
+                </nav>
+                <br />
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                <div class="content">
+                    <!-- PAGE CONTENT GOES HERE -->
+                    <asp:ContentPlaceHolder ID="main_content" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <footer class="footer" style="margin-top: -70px;">
+                    <div class="container-fluid">
+                        <div class="copyright float-right">
+                            &copy;&nbsp;2020&nbsp;Certib&nbsp;&nbsp;&nbsp;&nbsp;
                         </div>
                     </div>
-                    <div class="main-panel">
-                        <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
-                            <div class="container-fluid">
-                                <div class="navbar-wrapper">
-                                    <a class="navbar-brand" href="#rook"><%: Page.Title %></a>
-                                </div>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="navbar-toggler-icon icon-bar"></span>
-                                    <span class="navbar-toggler-icon icon-bar"></span>
-                                    <span class="navbar-toggler-icon icon-bar"></span>
-                                </button>
-                            </div>
-                        </nav>
-                        <asp:ContentPlaceHolder ID="main_content" runat="server">
-                        </asp:ContentPlaceHolder>
-                        <footer class="footer" style="margin-top: -70px;">
-                            <div class="container-fluid">
-                                <div class="copyright float-right">
-                                    &copy;BMSIT & M
-                                </div>
-                            </div>
-                        </footer>
-                    </div>
-                </ContentTemplate>
-            </asp:UpdatePanel>
+                </footer>
+            </div>
         </form>
     </div>
-    <script>
-        function DropDownExpand() {
-            var x = document.getElementById("DropBlock");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-
-        function DropDownShrink() {
-            var x = document.getElementById("DropBlock");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            }
-        }
-     
-    </script>
+    <script src="../Resource/Scripts/dashboard-util.js"></script>
     <script src="../Resource/Scripts/core/jquery.min.js" type="text/javascript"></script>
     <script src="../Resource/Scripts/core/popper.min.js" type="text/javascript"></script>
     <script src="../Resource/Scripts/silicon.js" type="text/javascript"></script>

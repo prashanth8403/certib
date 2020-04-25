@@ -1,4 +1,31 @@
 
+
+/*
+    CARD1 GRADINETS::
+*/
+
+.card1.card.card-stats {
+    background-image: linear-gradient(to bottom, #f91f1f, #e60035, #d00043, #b6004d, #9a0851);
+    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
+}
+
+.card2.card.card-stats {
+    background-image: linear-gradient(to bottom, #8408e3, #a400e2, #c000e0, #d900de, #f00adc);
+    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
+}
+
+.card3.card.card-stats {
+    background-image: linear-gradient(to bottom, #3ee127, #35d31f, #2cc517, #23b70f, #18a904);
+    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
+}
+
+.card4.card-stats {
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
+}
+
+/****************************************************************************************/
+
 .new-labels {
     width: 160px;
 }
@@ -40,7 +67,7 @@ li {
 ul {
     list-style-position: inside;
     padding-left: 0px;
-    margin-top:-20px;
+    margin-top: -20px;
 }
 
 .nav-link {
@@ -117,8 +144,11 @@ ul {
     font-size: 20px;
 }
 
-.dropdown-container {
+#DropBlock {
     display: none;
+}
+
+.dropdown-container {
     background-color: #fff;
 }
 
@@ -4736,29 +4766,6 @@ tbody.collapse.show {
     }
 
 
-.card2.card.card-stats {
-    background-image: linear-gradient(to bottom, #f91f1f, #e60035, #d00043, #b6004d, #9a0851);
-    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
-}
-
-.users.card.card-stats {
-    background-image: linear-gradient(to bottom, #8408e3, #a400e2, #c000e0, #d900de, #f00adc);
-    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
-}
-
-.payment.card.card-stats {
-    background-image: linear-gradient(to bottom, #3ee127, #35d31f, #2cc517, #23b70f, #18a904);
-    -webkit-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
-}
-
-.paid.card-stats {
-    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
-    -webkit-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
-}
 
 .navbar-dark .navbar-toggler {
     color: rgba(255, 255, 255, 0.5);
@@ -18289,8 +18296,7 @@ label {
     }
 
         .sidebar > ul,
-        .off-canvas-sidebar nav .navbar-collapse > 
-        {
+        .off-canvas-sidebar nav .navbar-collapse > {
             position: relative;
             z-index: 4;
             width: 100%;
