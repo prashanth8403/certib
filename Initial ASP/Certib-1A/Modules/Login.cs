@@ -44,4 +44,47 @@ namespace Certib_1A.Modules
     {
 
     }
+    public partial class inputform : System.Web.UI.Page
+    {
+        public static MySqlConnection connect = new MySqlConnection("Server=localhost; DATABASE=forminp; UID=root;PASSWORD=****************;");
+        string _id, _pass1, _password, actual_id = "", actual_pass = "", username = "";
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            connect.Open();
+            _id = TextBox1.Text;
+            _password = TextBox5.Text;
+            _pass1 = SILICON64.GenerateHash(_password);
+            MySqlDataReader dr;
+            string Query = "SELECT * FROM user_details;";
+            MySqlCommand process0 = new MySqlCommand(Query, connect);
+            dr = process0.ExecuteReader();
+            while (dr.Read())
+            {
+                actual_id += dr.GetValue(0);
+                actual_pass += dr.GetValue(1);
+                username += dr.GetValue(2);
+            }
+
+            if (_id == actual_id && _pass1 == actual_pass)
+            {
+                Session["id"] = actual_id;
+                Random rand = new Random();
+                int num = rand.Next();
+                Session["id"] = num;
+                Response.Redirect("/Dashboard.aspx?Security=" + SILICON64.GenerateHash(num.ToString()));
+
+            }
+            else
+            {
+                Label1.Text = "Login failed!";
+            }
+            connect.Close();
+
+        }
+    }
 }
