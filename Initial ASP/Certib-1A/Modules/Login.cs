@@ -56,64 +56,16 @@ namespace Certib_1A.Modules
         ///     RESULT:
         /// </example>
         /// </summary>
-        private bool Validate(string USERNAME, string PASSWORD)
+        public bool Validate(string USERNAME, string PASSWORD)
         {
             // connect : Local Instance of Connection String
             MySqlConnection connect = new MySqlConnection(ConfigurationManager.ConnectionStrings["CertibConnect"].ConnectionString);
             string Query = "SELECT COUNT(*) FROM usercredentials where USERID='" + USERNAME + "' AND PASSWORD='" + PASSWORD + "'";
             connect.Open();
             MySqlCommand LoginProcess = new MySqlCommand(Query, connect);
+            bool Flag = Convert.ToBoolean(LoginProcess.ExecuteScalar());
             connect.Close();
-            return Convert.ToBoolean(LoginProcess.ExecuteScalar());
+            return Flag;
         }
     }
 }
-/*
-public partial class inputform : System.Web.UI.Page
-{
-    public static MySqlConnection connect = new MySqlConnection("Server=localhost; DATABASE=forminp; UID=root;PASSWORD=****************;");
-    string _id, _pass1, _password, actual_id = "", actual_pass = "", username = "";
-    protected void Page_Load(object sender, EventArgs e)
-    {
-
-    }
-
-    protected void Button1_Click(object sender, EventArgs e)
-    {
-        connect.Open(); [OK]
-        _id = TextBox1.Text; [OK]
-        _password = TextBox5.Text; [OK]
-        _pass1 = SILICON64.GenerateHash(_password); [OK]
-        MySqlDataReader dr; 
-        // IF YOU SELECT *; IT WILL RETURN ALL THE ENTRIES IN THE DATABASE
-        IF THERE ARE 1000 USER then, mysql reader 'd' will have 1000 items.
-        if would be difficult to process further
-        string Query = "SELECT * FROM user_details;"; 
-        MySqlCommand process0 = new MySqlCommand(Query, connect);
-        dr = process0.ExecuteReader();
-        while (dr.Read())
-        {
-            actual_id += dr.GetValue(0);
-            actual_pass += dr.GetValue(1);
-            username += dr.GetValue(2);
-        }
-        // will not work for more than 1 record
-        if (_id == actual_id && _pass1 == actual_pass)
-        {
-            Session["id"] = actual_id;
-            Random rand = new Random();
-            int num = rand.Next();
-            Session["id"] = num;
-            // connection should be close before redirecting....
-            Response.Redirect("/Dashboard.aspx?Security=" + SILICON64.GenerateHash(num.ToString()));
-
-        }
-        else
-        {
-            Label1.Text = "Login failed!";
-        }
-        connect.Close();
-
-    }
-}
-}*/

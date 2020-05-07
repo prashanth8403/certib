@@ -116,3 +116,6 @@ C:\Users\Sushma S\Documents\certiproject\Initial ASP\Certib-1A\bin\Microsoft.Cod
 C:\Users\Sushma S\Documents\certiproject\Initial ASP\Certib-1A\bin\Silicon.dll
 C:\Users\Sushma S\Documents\certiproject\Initial ASP\Certib-1A\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Sushma S\Documents\certiproject\Initial ASP\Certib-1A\obj\Debug\Certib-1A.csproj.CopyComplete
+D:\Repository\GitHub\certib\Initial ASP\Certib-1A\bin\MySql.Data.dll
+D:\Repository\GitHub\certib\Initial ASP\Certib-1A\bin\Google.Protobuf.dll
+D:\Repository\GitHub\certib\Initial ASP\Certib-1A\bin\MySql.Data.xml
