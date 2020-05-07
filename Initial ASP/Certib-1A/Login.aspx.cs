@@ -15,10 +15,10 @@ namespace Certib_1A
             Modules.Login LOGIN = new Modules.Login();
             if (LOGIN.Validate(_userid.Text, SILICON64.GenerateHash(_password.Text)))
             {
-                Random rand = new Random();
-                int num = rand.Next();
-                Session["Access"] = num;
-                Response.Redirect("Dashboard/Mypage?Security=" + SILICON64.GenerateHash(num.ToString())+ "#Home");
+                Random RandomSeed = new Random();
+                int AccessControl = RandomSeed.Next();
+                Session["Access"] = AccessControl;
+                Response.Redirect("Dashboard/Mypage?Security=" + SILICON64.GenerateHash(AccessControl.ToString())+ "#Home");
             }
             else
             {

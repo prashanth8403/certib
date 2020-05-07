@@ -1,19 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Certib_1A.Login" %>
+﻿<%@ Page Language="C#" UnobtrusiveValidationMode="None" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Certib_1A.Login" %>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6W6HWNWGV9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-6W6HWNWGV9');
-    </script>
     <!-- TITLE -->
-    <title>LOGIN&nbsp&nbsp|&nbsp&nbsp Certib
+    <title>LOGIN&nbsp;&nbsp;|&nbsp;&nbsp;Certib
     </title>
     <!-- MOBILE VIEW ADJUSTMENT TAG -->
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
@@ -65,50 +57,77 @@
     <div class="page-header" style="filter: blur(5px); background-image: url('Resource/Images/main-bg/bg4.jpg');">
     </div>
     <form id="LoginPage" runat="server">
-        <div class="container" style="margin-top: -100vh; padding-top: 15vh;">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-                    <div class="card card-login">
-                        <!-- LOGIN SECTION -->
-                        <div class="card-body" style="min-height: 450px;">
-                            <div class="logo">
-                                <br />
-                                <a>Certib</a>
-                            </div>
-                            <div class="text-center">
-                                <asp:Label ID="LoginLabel" runat="server" Text="" Style="color: grey;"></asp:Label>
-                            </div>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="material-icons">face</i>
-                                    </span>
+        <asp:ScriptManager ID="LoginScriptHandler" runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel ID="LoginMainPanel" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                <div class="container" style="margin-top: -100vh; padding-top: 15vh;">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                            <div class="card card-login">
+                                <!-- LOGIN SECTION -->
+                                <div class="card-body" style="min-height: 450px;">
+                                    <div class="logo">
+                                        <br />
+                                        <a>Certib</a>
+                                    </div>
+                                    <br />
+                                    <div class="text-center">
+                                        <asp:Label ID="LoginLabel" CssClass="error-label" runat="server" Text=""></asp:Label>
+                                    </div>
+                                    <br />
+                                    <div class="validation-container">
+                                        <asp:RegularExpressionValidator
+                                            ID="UserIDValid"
+                                            CssClass="validation-class-text" runat="server"
+                                            ErrorMessage="*Invalid UserID"
+                                            ControlToValidate="_userid"
+                                            ValidationExpression="[0-9]{6}$"
+                                            Display="Dynamic">
+                                        </asp:RegularExpressionValidator>
+                                        <asp:RequiredFieldValidator CssClass="validation-class-text" ControlToValidate="_userid" ID="UserIDRequired" runat="server" ErrorMessage="*Enter UserID">
+                                        </asp:RequiredFieldValidator>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">face</i>
+                                            </span>
+                                        </div>
+                                        <asp:TextBox ID="_userid" class="form-control" placeholder="User ID..." runat="server"></asp:TextBox>
+                                    </div>
+                                     <div class="validation-container">
+                                        <asp:RequiredFieldValidator CssClass="validation-class-text" ControlToValidate="_password" ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Enter Password">
+                                        </asp:RequiredFieldValidator>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="material-icons">lock</i>
+                                            </span>
+                                        </div>
+                                        <asp:TextBox  ID="_password" class="form-control" TextMode="Password" placeholder="Password..." runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="text-center">
+                                        <br />
+                                        <br />
+                                        <asp:Button ID="LoginButton" class="btn btn-info" runat="server" Text="LOGIN" OnClick="LoginButton_Click" />
+                                    </div>
+                                    <br />
+                                    <br />
+                                    <br />
                                 </div>
-                                <asp:TextBox ID="_userid" class="form-control" placeholder="User ID..." runat="server"></asp:TextBox>
-                            </div>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                        <i class="material-icons">mail</i>
-                                    </span>
-                                </div>
-                                <asp:TextBox ID="_password" class="form-control" TextMode="Password" placeholder="Email..." runat="server"></asp:TextBox>
-                            </div>
-                            <div class="text-center">
-                                <br />
-                                <br />
-                                <asp:Button ID="LoginButton" class="btn btn-info" runat="server" Text="LOGIN" OnClick="LoginButton_Click" />
                             </div>
                         </div>
-                        <br />
                     </div>
                 </div>
-            </div>
-        </div>
+            </ContentTemplate>
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="LoginButton" />
+            </Triggers>
+        </asp:UpdatePanel>
     </form>
     <!-- SCRIPTS -->
     <script src="Resource/Scripts/core/jquery.min.js" type="text/javascript"></script>
-    <script src="Resource/Scripts/core/popper.min.js" type="text/javascript"></script>
     <script src="Resource/Scripts/core/bootstrap-material-design.min.js" type="text/javascript"></script>
     <script src="Resource/Scripts/silicon.js" type="text/javascript"></script>
 </body>

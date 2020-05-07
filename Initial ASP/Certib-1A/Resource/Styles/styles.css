@@ -1,4 +1,24 @@
+.validation-class-text {
+    color: #ff0000;
+    font-family: Verdana;
+    font-weight: 500;
+    text-align: center;
+}
 
+.validation-container {
+    margin-left: 50px;
+    position:absolute;
+    padding: 4px 4px 4px 4px;
+}
+
+.error-label {
+
+    color: #ff0000;
+    font-family: Verdana;
+    font-weight: 500;
+    font-size:16px;
+    text-align: center;
+}
 
 #bmsit1 {
     color: #d30000;
