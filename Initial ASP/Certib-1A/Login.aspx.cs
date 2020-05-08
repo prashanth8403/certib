@@ -20,7 +20,7 @@ namespace Certib_1A
                 Session["ID"] = _userid.Text;
                 Random RandomSeed = new Random();
                 int AccessControl = RandomSeed.Next();               
-                Session["Access"] = AccessControl;
+                Session["Access"] = Convert.ToString(AccessControl);
                 Response.Redirect("Dashboard/Mypage?Security=" + SILICON64.GenerateHash(AccessControl.ToString())+ "#Home");
             }
             else
