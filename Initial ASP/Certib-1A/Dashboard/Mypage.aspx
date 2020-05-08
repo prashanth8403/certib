@@ -13,7 +13,7 @@
                                 <i class="material-icons" style="font-size: 70px;">perm_identity</i>
                                 <div class="fee-anchor">
                                     <a>
-                                        <asp:Label ID="CardText1" runat="server" Text="0000"></asp:Label>
+                                        <asp:Label ID="CardText1" runat="server" Text=""></asp:Label>
                                     </a>
                                 </div>
                             </div>

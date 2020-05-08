@@ -13,10 +13,13 @@ namespace Certib_1A
         protected void LoginButton_Click(object sender, EventArgs e)
         {
             Modules.Login LOGIN = new Modules.Login();
+
+            
             if (LOGIN.Validate(_userid.Text, SILICON64.GenerateHash(_password.Text)))
             {
+                Session["ID"] = _userid.Text;
                 Random RandomSeed = new Random();
-                int AccessControl = RandomSeed.Next();
+                int AccessControl = RandomSeed.Next();               
                 Session["Access"] = AccessControl;
                 Response.Redirect("Dashboard/Mypage?Security=" + SILICON64.GenerateHash(AccessControl.ToString())+ "#Home");
             }
