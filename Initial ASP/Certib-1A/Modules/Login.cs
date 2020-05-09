@@ -60,7 +60,7 @@ namespace Certib_1A.Modules
         {
             // connect : Local Instance of Connection String
             MySqlConnection connect = new MySqlConnection(ConfigurationManager.ConnectionStrings["CertibConnect"].ConnectionString);
-            string Query = "SELECT COUNT(*) FROM usercredentials where USERID='" + USERNAME + "' AND PASSWORD='" + PASSWORD + "'";
+            string Query = "SELECT COUNT(*) FROM usercredentials where EMAIL='" + USERNAME + "' AND PASSWORD='" + PASSWORD + "'";
             connect.Open();
             MySqlCommand LoginProcess = new MySqlCommand(Query, connect);
             bool Flag = Convert.ToBoolean(LoginProcess.ExecuteScalar());

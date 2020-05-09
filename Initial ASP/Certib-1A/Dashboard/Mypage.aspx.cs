@@ -12,7 +12,7 @@ namespace Certib_1A.Dashboard
 {
     public partial class Mypage : System.Web.UI.Page
     {
-
+        MySqlConnection connect = new MySqlConnection(ConfigurationManager.ConnectionStrings["CertibConnect"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -21,15 +21,15 @@ namespace Certib_1A.Dashboard
                 {
                     if (Session["Access"] != null && Session["ID"] != null)
                     {
-                        string AccessID = Request.QueryString["Security"];
-                        if (AccessID == SILICON64.GenerateHash((string)Session["Access"]))
-                        {
+                        //string AccessID = Request.QueryString["Security"];
+                        //if (AccessID == SILICON64.GenerateHash((string)Session["Access"]))
+                        //{
                             CardText1.Text = Session["ID"].ToString();
-                        }
-                        else
-                        {
-                            Response.Redirect("~/Login");
-                        }
+                        //}
+                        //else
+                        //{
+                        //    Response.Redirect("~/Login");
+                        //}
                     }
                     else
                         Response.Redirect("~/Login");
