@@ -29,7 +29,7 @@
 */
 
 .card1.card-stats {
-    background-image: linear-gradient(to bottom, #f91f1f, #e60035, #d00043, #b6004d, #9a0851);
+    background-image: linear-gradient(286deg, rgba(18,221,150,1) 20%, rgba(57,92,203,1) 81%);
     box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
 }
 
@@ -39,12 +39,12 @@
 }
 
 .card2.card-stats {
-    background-image: linear-gradient(to bottom, #8408e3, #a400e2, #c000e0, #d900de, #f00adc);
+    background-image: linear-gradient(286deg, rgba(231,15,106,1) 20%, rgba(147,18,221,1) 81%);
     box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
 }
 
 .card3.card-stats {
-    background-image: linear-gradient(to bottom, #3ee127, #35d31f, #2cc517, #23b70f, #18a904);
+    background-image: linear-gradient(286deg, rgba(242,236,27,1) 15%, rgba(221,58,18,1) 81%);
     box-shadow: 10px 10px 40px -10px rgba(0,0,0,0.75);
 }
 
