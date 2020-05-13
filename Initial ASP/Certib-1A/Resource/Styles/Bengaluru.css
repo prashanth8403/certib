@@ -1,3 +1,49 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0px;
+    word-wrap: break-word;
+    background-color: #fff;
+    min-height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 10px 19px -9px rgba(171,159,171,1);
+    
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 5px;
+}
+
+.text-prop {
+    font-family: Calibri;
+    font-weight: 700;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 4px 20px;
+    margin: 6px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.label-text {
+    color: #000;
+    font-family: Calibri;
+    font-size: 18px;
+}
+
+.input-group {
+    padding-bottom: 5px;
+}
+
 /*
 background-image: linear-gradient(to bottom, #f4355e, #f72c57, #fa2350, #fd1648, #ff0040);
 background-image: linear-gradient(to top, #a000d8, #b91fe0, #d133e7, #e946ef, #ff58f7);
@@ -2966,7 +3012,7 @@ fieldset:disabled a.btn {
     border-color: #047dc7;
     box-shadow: none;
     position: center;
-    width: 100px;
+    
 }
 
     .btn-primary:hover {

@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dashboard\Mypage.aspx" />
+    <Content Include="Dashboard\PasswordChange.aspx" />
     <Content Include="Dashboard\Settings.aspx" />
     <Content Include="Dashboard\temp.aspx" />
     <Content Include="Default.aspx" />
@@ -126,6 +127,13 @@
     </Compile>
     <Compile Include="Dashboard\Mypage.aspx.designer.cs">
       <DependentUpon>Mypage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\PasswordChange.aspx.cs">
+      <DependentUpon>PasswordChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PasswordChange.aspx.designer.cs">
+      <DependentUpon>PasswordChange.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\Settings.aspx.cs">
       <DependentUpon>Settings.aspx</DependentUpon>
