@@ -17,7 +17,7 @@
                     <div class="text-center">
                         <h2 class="text-prop">Change Password</h2>
                         <hr />
-                        <h5 style="font-family:Calibri;">Change your account password below. We recommend using a strong password.</h5>
+                        <p class="direction-text">Change your account password below. We recommend using a strong password.</p>
                     </div>
                     <div class="text-center">
                          <asp:Label ID="ChangeLabel" CssClass="error-label" runat="server" Text=""></asp:Label>

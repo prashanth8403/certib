@@ -54,6 +54,11 @@ input[type=password], select {
     padding-bottom: 5px;
 }
 
+.direction-text {
+    font-family: Calibri;
+    font-size: 18px;
+}
+
 /*
 background-image: linear-gradient(to bottom, #f4355e, #f72c57, #fa2350, #fd1648, #ff0040);
 background-image: linear-gradient(to top, #a000d8, #b91fe0, #d133e7, #e946ef, #ff58f7);
