@@ -19,6 +19,9 @@
                         <hr />
                         <h5 style="font-family:Calibri;">Change your account password below. We recommend using a strong password.</h5>
                     </div>
+                    <div class="text-center">
+                         <asp:Label ID="ChangeLabel" CssClass="error-label" runat="server" Text=""></asp:Label>
+                    </div>
                     <br />
                     <div class="input-group">
                         <label for="OldPassword" class="label-text">Old Password</label>
@@ -37,7 +40,7 @@
                     <br />
                     <br />
                     <div class="text-center">
-                        <asp:Button ID="SubmitButton" class="btn btn-primary" runat="server" Text="Change your password now!" />
+                        <asp:Button ID="SubmitButton" class="btn btn-primary" runat="server" Text="Change your password now!" OnClick="SubmitButton_Click" />
                     </div>
                     <br />
                 </div>
