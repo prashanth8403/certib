@@ -127,7 +127,7 @@
                                         <i class="material-icons">api</i>
                                     </div>
                                     <h4 class="card-title">Certificate Form -
-                                    <small class="category">fill out the following</small>
+                                    <small class="category">fill out the following details</small>
                                     </h4>
                                 </div>
                                 <div class="card-body">
