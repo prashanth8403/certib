@@ -7,20 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Certib_1A.Dashboard
+namespace Certib.Dashboard
 {
 
 
-    public partial class temp
+    public partial class profile
     {
 
         /// <summary>
-        /// UpdatePanel1 control.
+        /// _UserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.WebControls.Label _UserName;
     }
 }

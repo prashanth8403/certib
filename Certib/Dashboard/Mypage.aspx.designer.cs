@@ -11,7 +11,7 @@ namespace Certib.Dashboard
 {
 
 
-    public partial class Mypage
+    public partial class Mypage1
     {
 
         /// <summary>

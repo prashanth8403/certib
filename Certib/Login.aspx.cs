@@ -8,13 +8,13 @@ namespace Certib
         protected void Page_Load(object sender, EventArgs e)
         {
             Session.Clear();
+            LoginLabel.Visible = false;
         }
 
         protected void LoginButton_Click(object sender, EventArgs e)
         {
             Modules.Login LOGIN = new Modules.Login();
-
-            
+            LoginLabel.Visible = true;
             if (LOGIN.Validate(_userid.Text, SILICON64.GenerateHash(_password.Text)))
             {
                 Session["ID"] = _userid.Text;
@@ -25,7 +25,7 @@ namespace Certib
             }
             else
             {
-                LoginLabel.Text = "Invalid Username or Password!";
+                LoginLabel.Text = "✖️ Invalid Username or Password";
             }
         }
     }

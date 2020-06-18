@@ -6,23 +6,27 @@
 
 .validation-class-text {
     color: #ff0000;
-    font-family: Verdana;
-    font-weight: 500;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size:15px;
     text-align: center;
 }
 
 .validation-container {
-    margin-left: 50px;
+    
+    margin-left:50px;
     position:absolute;
-    padding: 4px 4px 4px 4px;
+    padding: 5px 5px 5px 5px;
 }
 
 .error-label {
-
-    color: #ff0000;
-    font-family: Verdana;
+    color: #fff;
+    font-family: Roboto;
     font-weight: 500;
+    background-color:#f56464;
+    padding:5px 5px 5px 5px;
     font-size:16px;
+    border:1px solid #c61f1f;
     text-align: center;
 }
 

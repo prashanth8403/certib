@@ -11,7 +11,7 @@ namespace Certib.Dashboard
 {
 
 
-    public partial class certificate
+    public partial class Certificate1
     {
 
         /// <summary>
@@ -22,14 +22,5 @@ namespace Certib.Dashboard
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label _UserName;
-
-        /// <summary>
-        /// temp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm temp;
     }
 }

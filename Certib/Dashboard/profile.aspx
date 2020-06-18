@@ -1,7 +1,6 @@
-﻿<%@ Page Title="Settings" Language="C#" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="Settings.aspx.cs" Inherits="Certib.Dashboard.Settings" %>
-
-<asp:Content ID="SidePanel" ContentPlaceHolderID="SideBar" runat="server">
-    <div class="user">
+﻿<%@ Page Title="Profile" Language="C#" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="Profile.aspx.cs" Inherits="Certib.Dashboard.profile" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="SideBar" runat="server">
+        <div class="user">
         <ul class="nav">
             <li class="nav-item ">
                 <a class="nav-link" data-toggle="collapse" href="#UserCollapse">
@@ -15,14 +14,14 @@
                 </a>
                 <div class="collapse show" id="UserCollapse">
                     <ul class="nav">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="Profile">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
                                 <span class="sidebar-mini"><i class="material-icons">person</i></span>
                                 <span class="sidebar-normal">User Profile </span>
                             </a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Settings">
                                 <span class="sidebar-mini"><i class="material-icons">settings</i></span>
                                 <span class="sidebar-normal">Settings </span>
                             </a>
@@ -77,6 +76,6 @@
         </li>
     </ul>
 </asp:Content>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="main_content" runat="server">
+
 </asp:Content>

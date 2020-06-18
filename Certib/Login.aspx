@@ -79,12 +79,14 @@
                                         <asp:RegularExpressionValidator
                                             ID="UserIDValid"
                                             CssClass="validation-class-text" runat="server"
-                                            ErrorMessage="*Invalid Email"
+                                            ErrorMessage=" *Invalid Email"
                                             ControlToValidate="_userid"
                                             ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
                                             Display="Dynamic">
+                                            <a Class="validation-class-text"><i class="material-icons">error_outline</i>&nbsp;Invalid Email</a>
                                         </asp:RegularExpressionValidator>
                                         <asp:RequiredFieldValidator CssClass="validation-class-text" ControlToValidate="_userid" ID="UserIDRequired" runat="server" ErrorMessage="*Enter UserID">
+                                        <a Class="validation-class-text"><i class="material-icons">error_outline</i>&nbsp;Enter Email</a>
                                         </asp:RequiredFieldValidator>
                                     </div>
                                     <div class="input-group">
@@ -97,6 +99,7 @@
                                     </div>
                                     <div class="validation-container">
                                         <asp:RequiredFieldValidator CssClass="validation-class-text" ControlToValidate="_password" ID="RequiredFieldValidator1" runat="server" ErrorMessage="*Enter Password">
+                                            <a Class="validation-class-text"><i class="material-icons">error_outline</i>&nbsp;Enter Password</a>
                                         </asp:RequiredFieldValidator>
                                     </div>
                                     <div class="input-group">

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Configuration;
 using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace Certib.Dashboard
 {
-    public partial class Certificate1 : System.Web.UI.Page
+    public partial class profile : System.Web.UI.Page
     {
         MySqlConnection connect = new MySqlConnection(ConfigurationManager.ConnectionStrings["CertibConnect"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
