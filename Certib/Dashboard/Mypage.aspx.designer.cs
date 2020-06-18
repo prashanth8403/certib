@@ -9,52 +9,54 @@
 
 namespace Certib.Dashboard
 {
+
+
     public partial class Mypage
     {
 
         /// <summary>
-        /// UpdatePanel1 control.
+        /// _UserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.WebControls.Label _UserName;
 
         /// <summary>
-        /// CardText1 control.
+        /// _PendingLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CardText1;
+        protected global::System.Web.UI.WebControls.Label _PendingLabel;
 
         /// <summary>
-        /// CardText2 control.
+        /// _ApprovedLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CardText2;
+        protected global::System.Web.UI.WebControls.Label _ApprovedLabel;
 
         /// <summary>
-        /// CardText3 control.
+        /// _CertificatesIssued control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CardText3;
+        protected global::System.Web.UI.WebControls.Label _CertificatesIssued;
 
         /// <summary>
-        /// CardText4 control.
+        /// _CertificatesViewed control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CardText4;
+        protected global::System.Web.UI.WebControls.Label _CertificatesViewed;
     }
 }

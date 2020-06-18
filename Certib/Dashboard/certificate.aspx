@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Dashboard" Language="C#" AutoEventWireup="true" CodeBehind="Mypage.aspx.cs" Inherits="Certib.Dashboard.Mypage" %>
+﻿<%@ Page Language="C#" Title="Certificate" AutoEventWireup="true" CodeBehind="certificate.aspx.cs" Inherits="Certib.Dashboard.certificate" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,6 @@
     <!-- STYLESHEET -->
     <link href="../Resource/Styles/bengaluru.css" rel="stylesheet" />
 </head>
-
 <body>
     <div class="wrapper">
         <div class="sidebar" data-color="azure" data-background-color="white" data-image="../Resource/Images/misc/SideBar0.png">
@@ -35,7 +34,7 @@
                                     <i class="material-icons">person_outline</i>
                                 </div>
                                 <p>
-                                    <asp:Label ID="_UserName" runat="server" Text="Defaul Name"></asp:Label>    
+                                    <asp:Label ID="_UserName" runat="server" Text="Defaul Name"></asp:Label>
                                     <b class="caret"></b>
                                 </p>
                             </a>
@@ -59,7 +58,7 @@
                     </ul>
                 </div>
                 <ul class="nav">
-                    <li class="nav-item active ">
+                    <li class="nav-item">
                         <a class="nav-link" href="Mypage">
                             <i class="material-icons">home</i>
                             <p>Dashboard </p>
@@ -70,10 +69,10 @@
                             <i class="material-icons">aspect_ratio</i>
                             <p>Certificate <b class="caret"></b></p>
                         </a>
-                        <div class="collapse" id="Certificates">
+                        <div class="collapse show" id="Certificates">
                             <ul class="nav">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="Certificate">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">
                                         <span class="sidebar-mini"><i class="material-icons">description</i></span>
                                         <span class="sidebar-normal">Issue Certificate </span>
                                     </a>
@@ -108,7 +107,7 @@
             <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
-                        <a class="navbar-brand" href="#rook">Dashboard</a>
+                        <a class="navbar-brand" href="#rook">Certificate</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
@@ -118,94 +117,101 @@
                     </button>
                 </div>
             </nav>
-            <!-- End Navbar -->
             <div class="content">
-                <div class="content">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="card card-stats">
-                                    <div class="card-header card-header-warning card-header-icon">
-                                        <div class="card-icon">
-                                            <i class="material-icons">assignment</i>
-                                        </div>
-                                        <p class="card-category">Validation Pending</p>
-                                        <h3 class="card-title">
-                                            <asp:Label ID="_PendingLabel" runat="server" Text="00"></asp:Label>
-                                        </h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header card-header-icon card-header-info">
+                                    <div class="card-icon">
+                                        <i class="material-icons">api</i>
                                     </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">update</i>
-                                            &nbsp;Just now
-                                        </div>
-                                    </div>
+                                    <h4 class="card-title">Certificate Form -
+                                    <small class="category">fill out the following</small>
+                                    </h4>
                                 </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="card card-stats">
-                                    <div class="card-header card-header-rose card-header-icon">
-                                        <div class="card-icon">
-                                            <i class="material-icons">done_outline</i>
+                                <div class="card-body">
+                                    <form id="temp" runat="server">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Username</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Email address</label>
+                                                    <input type="email" class="form-control">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <p class="card-category">Certificates Approved</p>
-                                        <h3 class="card-title">
-                                            <asp:Label ID="_ApprovedLabel" runat="server" Text="00"></asp:Label>
-                                        </h3>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">update</i>
-                                             &nbsp;Just now
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Fist Name</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Last Name</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="card card-stats">
-                                    <div class="card-header card-header-info card-header-icon">
-                                        <div class="card-icon">
-                                            <i class="material-icons">addchart</i>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Adress</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <p class="card-category">Certificates Issued</p>
-                                        <h3 class="card-title">
-                                            <asp:Label ID="_CertificatesIssued" runat="server" Text="00"></asp:Label>
-                                        </h3>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">date_range</i> Last 24 Hours
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">City</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Country</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Postal Code</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="card card-stats">
-                                    <div class="card-header card-header-success card-header-icon">
-                                        <div class="card-icon">
-                                            <i class="material-icons">verified_user</i>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Description</label>
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <p class="card-category">Certificates Viewed</p>
-                                        <h3 class="card-title">
-                                            <asp:Label ID="_CertificatesViewed" runat="server" Text="00"></asp:Label>
-                                        </h3>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">date_range</i> Last 24 Hours
-                                        </div>
-                                    </div>
+                                        <button type="submit" class="btn btn-info pull-right">Next</button>
+                                        <div class="clearfix"></div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        asd
-                                    </div>
-                                    <div class="card-footer">
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="card card-profile">
+                                <div class="card-body">
+                                    <h6 class="card-category text-gray">Certificate</h6>
+                                    <p>
+                                        [Certificate Preview ]
+                                    </p>
+                                    <a href="#" class="btn btn-info btn-round">Preview Certificate</a>
                                 </div>
                             </div>
                         </div>
@@ -235,5 +241,6 @@
     <script src="../Resource/Scripts/core/dashboard-bootstrap.js"></script>
     <script src="../Resource/Scripts/plugins/perfect-scrollbar.jquery.min.js"></script>
     <script src="../Resource/Scripts/dashboard.js"></script>
+
 </body>
 </html>

@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Silicon;
 using System.Web.UI;
+using MySql.Data.MySqlClient;
 using System.Web.UI.WebControls;
 using System.Configuration;
-using MySql.Data.MySqlClient;
 
 namespace Certib.Dashboard
 {
@@ -24,7 +23,7 @@ namespace Certib.Dashboard
                         //string AccessID = Request.QueryString["Security"];
                         //if (AccessID == SILICON64.GenerateHash((string)Session["Access"]))
                         //{
-                            CardText1.Text = Session["ID"].ToString();
+                        _UserName.Text = Session["ID"].ToString();
                         //}
                         //else
                         //{

@@ -71,6 +71,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dashboard\certificate.aspx" />
     <Content Include="Dashboard\Mypage.aspx" />
     <Content Include="Dashboard\PasswordChange.aspx" />
     <Content Include="Dashboard\Settings.aspx" />
@@ -102,24 +103,44 @@
     <Content Include="Resource\Images\misc\load3.gif" />
     <Content Include="Resource\Images\misc\load4.gif" />
     <Content Include="Resource\Images\misc\load5.gif" />
+    <Content Include="Resource\Images\misc\profile.png" />
+    <Content Include="Resource\Images\misc\SideBar0.png" />
     <Content Include="Resource\Images\misc\temp.jpg" />
     <Content Include="Resource\Images\misc\tick.png" />
-    <Content Include="Resource\Scripts\core\bootstrap-material-design.min.js" />
+    <Content Include="Resource\Scripts\core\dashboard-bootstrap.js" />
     <Content Include="Resource\Scripts\core\jquery.min.js" />
     <Content Include="Resource\Scripts\core\popper.min.js" />
     <Content Include="Resource\Scripts\dashboard-util.js" />
+    <Content Include="Resource\Scripts\dashboard.js" />
+    <Content Include="Resource\Scripts\interface.js" />
+    <Content Include="Resource\Scripts\plugins\arrive.min.js" />
+    <Content Include="Resource\Scripts\plugins\bootstrap-datetimepicker.min.js" />
+    <Content Include="Resource\Scripts\plugins\bootstrap-notify.js" />
+    <Content Include="Resource\Scripts\plugins\bootstrap-selectpicker.js" />
+    <Content Include="Resource\Scripts\plugins\bootstrap-tagsinput.js" />
+    <Content Include="Resource\Scripts\plugins\chartist.min.js" />
+    <Content Include="Resource\Scripts\plugins\fullcalendar.min.js" />
+    <Content Include="Resource\Scripts\plugins\jasny-bootstrap.min.js" />
+    <Content Include="Resource\Scripts\plugins\jquery-jvectormap.js" />
+    <Content Include="Resource\Scripts\plugins\jquery.bootstrap-wizard.js" />
+    <Content Include="Resource\Scripts\plugins\jquery.dataTables.min.js" />
+    <Content Include="Resource\Scripts\plugins\jquery.validate.min.js" />
+    <Content Include="Resource\Scripts\plugins\moment.min.js" />
+    <Content Include="Resource\Scripts\plugins\nouislider.min.js" />
+    <Content Include="Resource\Scripts\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Resource\Scripts\plugins\sweetalert2.js" />
     <Content Include="Resource\Scripts\silicon.js" />
-    <Content Include="Resource\Styles\Bengaluru.css" />
+    <Content Include="Resource\Styles\bengaluru.css" />
     <Content Include="Resource\Styles\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dashboard\Dashboard.Master.cs">
-      <DependentUpon>Dashboard.Master</DependentUpon>
+    <Compile Include="Dashboard\certificate.aspx.cs">
+      <DependentUpon>certificate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\Dashboard.Master.designer.cs">
-      <DependentUpon>Dashboard.Master</DependentUpon>
+    <Compile Include="Dashboard\certificate.aspx.designer.cs">
+      <DependentUpon>certificate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\Mypage.aspx.cs">
       <DependentUpon>Mypage.aspx</DependentUpon>
@@ -127,6 +148,13 @@
     </Compile>
     <Compile Include="Dashboard\Mypage.aspx.designer.cs">
       <DependentUpon>Mypage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.Master.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.Master.designer.cs">
+      <DependentUpon>Dashboard.Master</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\PasswordChange.aspx.cs">
       <DependentUpon>PasswordChange.aspx</DependentUpon>
@@ -174,6 +202,7 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modules\Login.cs" />
+    <Compile Include="Modules\UserProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
