@@ -24,6 +24,24 @@ namespace Certib.Dashboard
         protected global::System.Web.UI.HtmlControls.HtmlForm DashboardForm;
 
         /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+
+        /// <summary>
+        /// MasterPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel MasterPanel;
+
+        /// <summary>
         /// SideBar control.
         /// </summary>
         /// <remarks>
@@ -40,5 +58,14 @@ namespace Certib.Dashboard
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder main_content;
+
+        /// <summary>
+        /// ProgressPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdateProgress ProgressPanel;
     }
 }

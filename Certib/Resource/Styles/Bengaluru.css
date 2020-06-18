@@ -1,4 +1,20 @@
 
+.loading-content {
+    margin: auto;
+    background-image: url('../Images/misc/load2.gif');
+    padding: 0;
+    background-size: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    height: 70px;
+    position: center;
+    margin-top: 30vh;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
 .logo {
     background-color: #fff;
     text-align: center;

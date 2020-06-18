@@ -14,6 +14,7 @@ namespace Certib.Dashboard
         MySqlConnection connect = new MySqlConnection(ConfigurationManager.ConnectionStrings["CertibConnect"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
+            System.Threading.Thread.Sleep(5000);
             if (!IsPostBack)
             {
                 try
