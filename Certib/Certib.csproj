@@ -113,6 +113,7 @@
     <Content Include="Resource\Scripts\dashboard-util.js" />
     <Content Include="Resource\Scripts\dashboard.js" />
     <Content Include="Resource\Scripts\interface.js" />
+    <Content Include="Resource\Scripts\material-kit.mind1f1.js" />
     <Content Include="Resource\Scripts\plugins\arrive.min.js" />
     <Content Include="Resource\Scripts\plugins\bootstrap-datetimepicker.min.js" />
     <Content Include="Resource\Scripts\plugins\bootstrap-notify.js" />

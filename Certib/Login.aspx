@@ -54,7 +54,7 @@
             </div>
         </div>
     </nav>
-    <div class="page-header" style="filter: blur(3px); background-image: url('Resource/Images/main-bg/bg16.jpg');">
+    <div class="page-header" style="filter: blur(3px); background-image: url('Resource/Images/main-bg/bg102.jpg');">
     </div>
     <form id="LoginPage" runat="server">
         <asp:ScriptManager ID="LoginScriptHandler" runat="server"></asp:ScriptManager>
@@ -72,7 +72,7 @@
                                     </div>
                                     <br />
                                     <div class="text-center">
-                                        <asp:Label ID="LoginLabel" CssClass="error-label" runat="server" Text=""></asp:Label>
+                                        <asp:Label ID="LoginLabel" CssClass="error-label" runat="server" Text="Mike tango"></asp:Label>
                                     </div>
                                     <br />
                                     <div class="validation-container">

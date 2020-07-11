@@ -25,7 +25,7 @@ namespace Certib
             }
             else
             {
-                LoginLabel.Text = "✖️ Invalid Username or Password";
+                LoginLabel.Text = "Invalid Username or Password";
             }
         }
     }
