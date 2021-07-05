@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PasswordChange.aspx.cs" Inherits="Certib.Dashboard.PasswordChange" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="password_changer.aspx.cs" Inherits="Certib.Dashboard.PasswordChange" %>
 
 <!DOCTYPE html>
 

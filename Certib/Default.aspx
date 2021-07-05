@@ -9,26 +9,25 @@
     <!-- MOBILE VIEW ADJUSTMENT TAG -->
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!-- FAVICON ICON -->
-    <link rel="icon" type="image/png" href="Resource/Images/logo.png">
-    <!-- FONTS  & ICONS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons|Pacifico&display=swap" type="text/css" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="Resource/Styles/styles.css" />
+    <link href="Resource/Styles/styles1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="index-page sidebar-collapse">
     <form id="form1" style="margin-bottom: 0px;">
-        <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top  navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+        <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
             <div class="container">
                 <div class="navbar-translate">
                     <div>
                         <div style="float: left; padding-right: 10px;">
-                            <img id="logoid" src="Resource/Images/logo.png" height="60" />
+                            <img src="Resource/Images/logo.png" height="60" />
                         </div>
                         <div style="float: right; padding-top: 10px;">
-                            <a id="bmsit1" class="bmsit-text">BMS</a><br />
-                            <a id="bmsit2" class="bmsit-text-s">INSTITUTE OF TECHNOLOGY</a>
+                            <a style="font-family: Arial; font-size: 32px; color: #d30000; font-weight: 600">BMS</a><br />
+                            <a style="font-family: Calibri; color: #363491; font-size: 22px; font-weight: 600">INSTITUTE OF TECHNOLOGY</a>
                         </div>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,19 +40,21 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="Login">
+                            <a class="nav-link" href="login">
                                 <i class="material-icons">perm_identity</i> Login
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <i class="material-icons">info</i> About
+                                <i class="material-icons">admin_panel_settings</i> Verify
                             </a>
                         </li>
+                      
                     </ul>
                 </div>
             </div>
         </nav>
+
         <div class="page-header" style="height: 100vh; background-image: url('Resource/Images/main-bg/bg13.jpg');">
             <div class="container">
                 <div class="row">
@@ -62,7 +63,8 @@
                             <h1>Certib</h1>
                             <h3>A Digital Certificate portal.</h3>
                             <br />
-                            <a href="#" class="btn btn-warning">Know more</a>
+                            <a href="#" class="btn btn-warning">
+                                <i class="material-icons">fingerprint&nbsp;&nbsp;</i>Access Certificate</a>
                         </div>
                     </div>
                 </div>

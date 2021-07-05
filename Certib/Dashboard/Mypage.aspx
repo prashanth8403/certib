@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="Mypage.aspx.cs" Inherits="Certib.Dashboard.Mypage1" %>
+﻿<%@ Page Title="Dashboard" Language="C#" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="mypage.aspx.cs" Inherits="Certib.Dashboard.Mypage1" %>
 
 <asp:Content ID="SidePanel" ContentPlaceHolderID="SideBar" runat="server">
     <div class="user">

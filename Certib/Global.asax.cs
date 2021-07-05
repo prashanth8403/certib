@@ -18,12 +18,12 @@ namespace Certib
 
         static void RegisterRoutes(RouteCollection routes)
         {
-            routes.MapPageRoute("Home", "Home", "~/Default.aspx");
-            routes.MapPageRoute("Login", "Login", "~/Login.aspx");
-            routes.MapPageRoute("Dashboard/Mypage", "Dashboard/Mypage", "~/Dashboard/Mypage.aspx");
-            routes.MapPageRoute("Dashboard/Certificate", "Dashboard/Certificate", "~/Dashboard/Certificate.aspx");
-            routes.MapPageRoute("Dashboard/Settings", "Dashboard/Settings", "~/Dashboard/Settings.aspx");
-            routes.MapPageRoute("Dashboard/Profile", "Dashboard/Profile", "~/Dashboard/Profile.aspx");
+            routes.MapPageRoute("home", "home", "~/Default.aspx");
+            routes.MapPageRoute("login", "login", "~/login.aspx");
+            routes.MapPageRoute("dashboard/mypage", "dashboard/Mypage", "~/dashboard/mypage.aspx");
+            routes.MapPageRoute("dashboard/certificate", "dashboard/certificate", "~/dashboard/certificate.aspx");
+            routes.MapPageRoute("dashboard/settings", "dashboard/settings", "~/dashboard/settings.aspx");
+            routes.MapPageRoute("dashboard/profile", "dashboard/profile", "~/dashboard/profile.aspx");
         }
 
         protected void Session_Start(object sender, EventArgs e)

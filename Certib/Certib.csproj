@@ -13,9 +13,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Certib</RootNamespace>
     <AssemblyName>Certib</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>
+    </Use64BitIISExpress>
     <IISExpressSSLPort>44375</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -23,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,22 +50,21 @@
     <Reference Include="Silicon">
       <HintPath>..\..\..\..\Downloads\Silicon.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -71,15 +72,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Dashboard\Certificate.aspx" />
-    <Content Include="Dashboard\Mypage.aspx" />
-    <Content Include="Dashboard\PasswordChange.aspx" />
-    <Content Include="Dashboard\Profile.aspx" />
-    <Content Include="Dashboard\Settings.aspx" />
+    <Content Include="dashboard\certificate.aspx" />
+    <Content Include="dashboard\mypage.aspx" />
+    <Content Include="dashboard\password_changer.aspx" />
+    <Content Include="dashboard\Profile.aspx" />
+    <Content Include="dashboard\settings.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="error.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Login.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="Resource\Images\certificate\bg14.png" />
     <Content Include="Resource\Images\certificate\ribbon3.png" />
     <Content Include="Resource\Images\certificate\vector-bottom.jpg" />
@@ -133,50 +134,51 @@
     <Content Include="Resource\Scripts\silicon.js" />
     <Content Include="Resource\Styles\bengaluru.css" />
     <Content Include="Resource\Styles\styles.css" />
+    <Content Include="Resource\Styles\styles1.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dashboard\Certificate.aspx.cs">
-      <DependentUpon>Certificate.aspx</DependentUpon>
+    <Compile Include="dashboard\certificate.aspx.cs">
+      <DependentUpon>certificate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\Certificate.aspx.designer.cs">
-      <DependentUpon>Certificate.aspx</DependentUpon>
+    <Compile Include="dashboard\certificate.aspx.designer.cs">
+      <DependentUpon>certificate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\Dashboard.Master.cs">
+    <Compile Include="dashboard\Dashboard.Master.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\Dashboard.Master.designer.cs">
+    <Compile Include="dashboard\Dashboard.Master.designer.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\Mypage.aspx.cs">
-      <DependentUpon>Mypage.aspx</DependentUpon>
+    <Compile Include="dashboard\mypage.aspx.cs">
+      <DependentUpon>mypage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\Mypage.aspx.designer.cs">
-      <DependentUpon>Mypage.aspx</DependentUpon>
+    <Compile Include="dashboard\mypage.aspx.designer.cs">
+      <DependentUpon>mypage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\PasswordChange.aspx.cs">
-      <DependentUpon>PasswordChange.aspx</DependentUpon>
+    <Compile Include="dashboard\password_changer.aspx.cs">
+      <DependentUpon>password_changer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\PasswordChange.aspx.designer.cs">
-      <DependentUpon>PasswordChange.aspx</DependentUpon>
+    <Compile Include="dashboard\password_changer.aspx.designer.cs">
+      <DependentUpon>password_changer.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\Profile.aspx.cs">
+    <Compile Include="dashboard\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\Profile.aspx.designer.cs">
+    <Compile Include="dashboard\Profile.aspx.designer.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\Settings.aspx.cs">
-      <DependentUpon>Settings.aspx</DependentUpon>
+    <Compile Include="dashboard\settings.aspx.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\Settings.aspx.designer.cs">
-      <DependentUpon>Settings.aspx</DependentUpon>
+    <Compile Include="dashboard\settings.aspx.designer.cs">
+      <DependentUpon>settings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -195,19 +197,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modules\Login.cs" />
     <Compile Include="Modules\UserProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Dashboard\Dashboard.Master" />
+    <Content Include="dashboard\Dashboard.Master" />
     <None Include="packages.config" />
     <Content Include="Resource\scss\material-kit.scss" />
     <Content Include="Resource\scss\material-kit\bootstrap\scss\bootstrap-grid.scss" />
@@ -385,11 +387,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="certificates\" />
     <Folder Include="Documents\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
@@ -408,6 +414,9 @@
           <CustomServerUrl>
           </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <servers defaultServer="">
+            <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:52895/" workingDir="" />
+          </servers>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

@@ -15,6 +15,7 @@ namespace Certib
         {
             Modules.Login LOGIN = new Modules.Login();
             LoginLabel.Visible = true;
+            System.Diagnostics.Debug.WriteLine(SILICON64.GenerateHash(_password.Text));
             if (LOGIN.Validate(_userid.Text, SILICON64.GenerateHash(_password.Text)))
             {
                 Session["ID"] = _userid.Text;

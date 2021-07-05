@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Certificate" Language="C#" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="Certificate.aspx.cs" Inherits="Certib.Dashboard.Certificate1" %>
+﻿<%@ Page Title="Certificate" Language="C#" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="certificate.aspx.cs" Inherits="Certib.Dashboard.Certificate1" %>
 
 <asp:Content ID="SideBar" ContentPlaceHolderID="SideBar" runat="server">
     <div class="user">
