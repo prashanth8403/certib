@@ -22,7 +22,7 @@ namespace Certib
                 Random RandomSeed = new Random();
                 int AccessControl = RandomSeed.Next();               
                 Session["Access"] = Convert.ToString(AccessControl);
-                Response.Redirect("Dashboard/Mypage?Security=" + SILICON64.GenerateHash(AccessControl.ToString())+ "#Home");
+                Response.Redirect("dashboard/mypage?Security=" + SILICON64.GenerateHash(AccessControl.ToString())+ "#Home");
             }
             else
             {

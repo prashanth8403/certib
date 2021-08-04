@@ -120,3 +120,4 @@ D:\Project\certib\Certib\obj\Debug\Certib.csproj.CoreCompileInputs.cache
 D:\Project\certib\Certib\obj\Debug\Certib.csproj.CopyComplete
 D:\Project\certib\Certib\obj\Debug\Certib.dll
 D:\Project\certib\Certib\obj\Debug\Certib.pdb
+D:\Project\certib\Certib\bin\Newtonsoft.Json.dll

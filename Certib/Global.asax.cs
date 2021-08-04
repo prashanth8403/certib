@@ -20,10 +20,15 @@ namespace Certib
         {
             routes.MapPageRoute("home", "home", "~/Default.aspx");
             routes.MapPageRoute("login", "login", "~/login.aspx");
+            routes.MapPageRoute("view", "view", "~/view.aspx");
+            routes.MapPageRoute("verification", "verification", "~/verification.aspx");
+            routes.MapPageRoute("dashboard/approval", "dashboard/approval", "~/dashboard/approval.aspx");
+            routes.MapPageRoute("dashboard/misccertificate", "dashboard/misccertificate", "~/dashboard/misccertificate.aspx");
             routes.MapPageRoute("dashboard/mypage", "dashboard/Mypage", "~/dashboard/mypage.aspx");
             routes.MapPageRoute("dashboard/certificate", "dashboard/certificate", "~/dashboard/certificate.aspx");
             routes.MapPageRoute("dashboard/settings", "dashboard/settings", "~/dashboard/settings.aspx");
             routes.MapPageRoute("dashboard/profile", "dashboard/profile", "~/dashboard/profile.aspx");
+
         }
 
         protected void Session_Start(object sender, EventArgs e)

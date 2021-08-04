@@ -59,12 +59,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
-                        <div class="brand">
-                            <h1>Certib</h1>
-                            <h3>A Digital Certificate portal.</h3>
+                        <div class="brand" style="font-size:50px;">
+                            <h2 style="font-weight:600;">BLOCKCHAIN CERTIFICATE MANAGEMENT SYSTEM WITH IMAGE STEGANOGRAPHY
+</h2>
+                            <h3>Under the Guidance of Dr. USHA B A</h3>
                             <br />
-                            <a href="#" class="btn btn-warning">
-                                <i class="material-icons">fingerprint&nbsp;&nbsp;</i>Access Certificate</a>
+                            <a href="verification" class="btn btn-warning">
+                                <i class="material-icons">fingerprint&nbsp;&nbsp;</i>Verify Certificate</a>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,218 @@
 
+.customers tr:nth-child(even) {
+    background-color: #fff
+}
+
+.customers a {
+    color: #363491
+}
+
+#GridWithHeld tr:hover {
+    background-color: rgba(255,56,66,0.5);
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff
+}
+
+.customers tr:hover {
+    background-color: #DEFF50;
+    cursor: pointer;
+    color: #fff
+}
+
+.customers a:hover {
+    color: #fff
+}
+
+table {
+    page-break-inside: auto
+}
+
+tr {
+    page-break-inside: avoid;
+    page-break-after: auto
+}
+
+thead {
+    display: table-header-group
+}
+
+tfoot {
+    display: table-footer-group
+}
+
+.customers {
+    overflow: auto;
+    border-collapse: collapse;
+    width: 99.95%;
+    font-size: 15px;
+    min-width: 600px
+}
+
+#GridWithHeld th {
+    background-color: #f44336
+}
+
+    .customers td, .customers th {
+        border: 1px solid #ccc;
+        padding: 3px 0;
+        text-align: center;
+        color: #353535;
+        min-width: 70px;
+        font-weight: 500
+    }
+
+.table-container {
+    overflow-x: auto;
+    min-width: 100%;
+    border-radius: 3px
+}
+
+.modal-load {
+    position: fixed;
+    z-index: 5;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(225,225,225,0.6);
+}
+
+#modal2 {
+    margin-top: 10px;
+    max-width: 80%;
+    min-height:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+    margin-top: 50px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.modal-load-content {
+    margin: auto;
+    background-image: url('../Images/misc/load5.gif');
+    padding: 0;
+    background-size: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    height: 70px;
+    position: center;
+    margin-top: 30vh;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.modal-load-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-load-body {
+    padding: 2px 16px;
+}
+
+.modal-load-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.short-text{
+    width:150px;
+    border-radius:2px;
+    border:1px solid #999;
+}
+
+.short-text:focus{
+    border: 2px solid #0270f7;
+}
+
+.error-label {
+    color: rgb(198,72,101);
+    font-family: Roboto;
+    font-weight: 400;
+    background-color: rgb(250,221,224);
+    padding: 5px 5px 5px 5px;
+    font-size: 14px;
+    border: 1px solid #f44336;
+    text-align: center;
+}
+
+.customers th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    height: 35px;
+    background-color: #5300d8;
+    color: #ffffff;
+    text-align: center;
+    border: 0 solid;
+    font-family: 'Segoe UI'
+}
+
+.validation-class-text {
+    color: #ff0000;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+
+.validation-container {
+    margin-left: 50px;
+    position: absolute;
+    padding: 5px 5px 5px 5px;
+}
+
 .loading-content {
     margin: auto;
     background-image: url('../Images/misc/load2.gif');
@@ -8492,8 +8706,10 @@ a.text-dark:focus, a.text-dark:hover {
             color: #fff;
             background-color: #999;
             border-color: #999;
-            box-shadow: 0 2px 2px 0 hsla(0,0%,60%,.14),0 3px 1px -2px hsla(0,0%,60%,.2),0 1px 5px 0 hsla(0,0%,60%,.12)
-        }
+            box-shadow: 0 2px 2px 0 hsla(0,0%,60%,.14),0 3px 1px -2px hsla(0,0%,60%,.2),0 1px 5px 0 hsla(0,0%,60%,.12);
+    top: 0px;
+    left: 0px;
+}
 
             .btn.btn-default.focus, .btn.btn-default:focus, .btn.btn-default:hover, .btn.focus, .btn:focus, .btn:hover {
                 color: #fff;
@@ -13235,8 +13451,10 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
     }
 
         .card .card-body .form-group {
-            margin: 8px 0 0
-        }
+            margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
 
     .card .card-header {
         z-index: 3 !important

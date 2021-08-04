@@ -45,27 +45,27 @@
             </a>
             <div class="collapse" id="Certificates">
                 <ul class="nav">
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="Certificate">
                             <span class="sidebar-mini"><i class="material-icons">description</i></span>
-                            <span class="sidebar-normal">Issue Certificate </span>
+                            <span class="sidebar-normal">Degree Certificate </span>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">
-                            <span class="sidebar-mini"><i class="material-icons">how_to_reg</i></span>
-                            <span class="sidebar-normal">Approve Certificate </span>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="misccertificate">
                             <span class="sidebar-mini"><i class="material-icons">view_module</i></span>
-                            <span class="sidebar-normal">Option 3 </span>
+                            <span class="sidebar-normal">Appreciation Certificate </span>
                         </a>
                     </li>
                 </ul>
             </div>
         </li>
+         <li class="nav-item">
+                <a class="nav-link" href="approval">
+                    <i class="material-icons">how_to_reg</i>
+                    <p>Approve Certificate </p>
+                </a>
+         </li>
         <br />
         <br />
         <li class="nav-item ">

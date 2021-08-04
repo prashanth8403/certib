@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Certificate" Language="C#" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="certificate.aspx.cs" Inherits="Certib.Dashboard.Certificate1" %>
+﻿<%@ Page Title="Certificate" Language="C#" UnobtrusiveValidationMode="None" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="certificate.aspx.cs" Inherits="Certib.Dashboard.Certificate1" %>
 
 <asp:Content ID="SideBar" ContentPlaceHolderID="SideBar" runat="server">
     <div class="user">
@@ -47,25 +47,25 @@
             <div class="collapse show" id="Certificates">
                 <ul class="nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="Certificate">
+                        <a class="nav-link" href="#">
                             <span class="sidebar-mini"><i class="material-icons">description</i></span>
-                            <span class="sidebar-normal">Issue Certificate </span>
+                            <span class="sidebar-normal">Degree Certificate </span>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">
-                            <span class="sidebar-mini"><i class="material-icons">how_to_reg</i></span>
-                            <span class="sidebar-normal">Approve Certificate </span>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="misccertificate">
                             <span class="sidebar-mini"><i class="material-icons">view_module</i></span>
-                            <span class="sidebar-normal">Option 3 </span>
+                            <span class="sidebar-normal">Appreciation Certificate </span>
                         </a>
                     </li>
                 </ul>
             </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="approval">
+                <i class="material-icons">how_to_reg</i>
+                <p>Approve Certificate </p>
+            </a>
         </li>
         <br />
         <br />
@@ -78,100 +78,165 @@
     </ul>
 </asp:Content>
 <asp:Content ID="MainPanel" ContentPlaceHolderID="main_content" runat="server">
-    <div class="content">
+    <div class="content" style="margin-top: -50px;">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-10 ml-auto mr-auto">
                     <div class="card">
-                        <div class="card-header card-header-icon card-header-info">
-                            <div class="card-icon">
-                                <i class="material-icons">api</i>
-                            </div>
-                            <h4 class="card-title">Certificate Form -
+                        <br />
+                        <br />
+                        <div class="card-header card-header-primary">
+                            <h4 class="card-title">Academic Certificate Form (A97) -
                                     <small class="category">fill out the following details</small>
                             </h4>
                         </div>
                         <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="bmd-label-floating">Username</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="bmd-label-floating">Email address</label>
-                                        <input type="email" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="bmd-label-floating">Fist Name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="bmd-label-floating">Last Name</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="bmd-label-floating">Adress</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="bmd-label-floating">City</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="bmd-label-floating">Country</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="bmd-label-floating">Postal Code</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label>Description</label>
-                                        <div class="form-group">
-                                            <textarea class="form-control" rows="5"></textarea>
+                            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                            <asp:UpdatePanel ID="CertificateWizard" runat="server" UpdateMode="Conditional">
+                                <ContentTemplate>
+                                    <asp:Panel ID="DetailsPanel" runat="server">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Full Name</label>
+                                                    <asp:TextBox ID="FullName" class="form-control" runat="server"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Email address</label>
+                                                    <asp:TextBox ID="Email" class="form-control" type="email" runat="server"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">University Seat Number</label>
+                                                    <asp:TextBox ID="Usn" class="form-control" runat="server"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <asp:DropDownList class="form-control" ID="department_selection" runat="server">
+                                                        <asp:ListItem Value="0">Select Department</asp:ListItem>
+                                                        <asp:ListItem Value="Computer Science and Engineering">Computer Science and Engineering</asp:ListItem>
+                                                        <asp:ListItem Value="Electrical and Electronic Engineering">Electrical and Electronic Engineering</asp:ListItem>
+                                                        <asp:ListItem Value="Electrical and Communcation Engineering">Electrical and Communcation Engineering</asp:ListItem>
+                                                        <asp:ListItem Value="Mechanical Engineering">Mechanical Engineering</asp:ListItem>
+                                                        <asp:ListItem Value="Information and Science Engineering">Information and Science Engineering</asp:ListItem>
+                                                        <asp:ListItem Value="Mechanical Engineering">Mechanical Engineering</asp:ListItem>
+                                                        <asp:ListItem Value="Information and Science Engineering">Information and Science Engineering</asp:ListItem>
+                                                    </asp:DropDownList>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Secured Marks</label><br />
+                                                    <asp:TextBox CssClass="short-text" ID="Marks" runat="server"></asp:TextBox>
+                                                    of 
+                                        <asp:TextBox CssClass="short-text" ID="MaxMarks" runat="server"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Passing Year</label><br />
+                                                    <asp:TextBox CssClass="short-text" ID="StartYear" runat="server"></asp:TextBox>
+                                                    to 
+                                        <asp:TextBox CssClass="short-text" ID="EndYear" runat="server"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Remarks</label>
+                                                    <asp:TextBox ID="Remarks" class="form-control" runat="server"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </asp:Panel>
+                                    <asp:Panel ID="ConfirmationPanel" runat="server">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <asp:DropDownList class="form-control" ID="Authority" runat="server">
+                                                        <asp:ListItem Value="0">Select Authorization Authority</asp:ListItem>
+                                                        <asp:ListItem Value="Principal, BMSIT&M">Principal, BMSIT&M</asp:ListItem>
+                                                        <asp:ListItem Value="Head of Department">Head of Department</asp:ListItem>
+                                                    </asp:DropDownList>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <asp:DropDownList class="form-control" ID="AlgorithmType" runat="server">
+                                                        <asp:ListItem Value="0">Select Steganography Method</asp:ListItem>
+                                                        <asp:ListItem Value="1">LSB Image Steganography</asp:ListItem>
+                                                        <asp:ListItem Value="2">Integer WaveLet Steganography</asp:ListItem>
+                                                    </asp:DropDownList>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <br />
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="bmd-label-floating">Description</label>
+                                                    <asp:TextBox ID="Description" class="form-control" runat="server"></asp:TextBox>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </asp:Panel>
+                                    <asp:Panel ID="SucessPanel" runat="server">
+                                        <div class="update-progress">
+                                            <div class="modal-load">
+                                                <div class="modal-content" style="margin-top: 80px;">
+                                                    <div class="modal-body">
+                                                        <div style="width: 80px; position: center; margin-left: auto; margin-right: auto;">
+                                                            <img src="../Resource/Images/tick.png" height="80" width="80" />
+                                                        </div>
+                                                        <div style="text-align: center; padding-top: 20px;">
+                                                            <a style="padding-top: 60px; font-family: Calibri; font-size: 30px; font-weight: 600;">Success!</a>
+                                                        </div>
+                                                        <br />
+                                                        <p style="text-align: center; font-family: Verdana, Roboto; padding-left: 8px; font-size: 15px; font-weight: 400">
+                                                            <asp:Label ID="SuccessMessage" runat="server" Text="Certificate Successfully Generated & sent for Approval."></asp:Label><br />
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="footer" style="position: center; margin-left: auto; margin-right: auto;">
+                                                        <a class="btn btn-primary" href="mypage">OK</a>
+                                                    </div>
+                                                    <br />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </asp:Panel>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group ml-auto mr-0 float-right">
+                                                    <asp:Button ID="PrevButton" class="btn btn-dark" runat="server" Text="Previous" OnClick="PrevButton_Click" />
+                                                    <asp:Button ID="Button1" class="btn btn-info" runat="server" Text="Next" OnClick="Button1_Click" />
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-info pull-right">Next</button>
-                            <div class="clearfix"></div>
+                                </ContentTemplate>
+                                <Triggers>
+                                    <asp:AsyncPostBackTrigger ControlID="Button1" />
+                                </Triggers>
+                            </asp:UpdatePanel>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card card-profile">
-                        <div class="card-body">
-                            <h6 class="card-category text-gray">Certificate</h6>
-                            <p>
-                                [Certificate Preview ]
-                            </p>
-                            <a href="#" class="btn btn-info btn-round">Preview Certificate</a>
-                        </div>
+                        <br />
                     </div>
                 </div>
             </div>

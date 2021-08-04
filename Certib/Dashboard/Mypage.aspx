@@ -46,26 +46,26 @@
             </a>
             <div class="collapse" id="Certificates">
                 <ul class="nav">
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="Certificate">
                             <span class="sidebar-mini"><i class="material-icons">description</i></span>
-                            <span class="sidebar-normal">Issue Certificate </span>
+                            <span class="sidebar-normal">Degree Certificate </span>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">
-                            <span class="sidebar-mini"><i class="material-icons">how_to_reg</i></span>
-                            <span class="sidebar-normal">Approve Certificate </span>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="misccertificate">
                             <span class="sidebar-mini"><i class="material-icons">view_module</i></span>
-                            <span class="sidebar-normal">Option 3 </span>
+                            <span class="sidebar-normal">Appreciation Certificate </span>
                         </a>
                     </li>
                 </ul>
             </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="approval">
+                <i class="material-icons">how_to_reg</i>
+                <p>Approve Certificate </p>
+            </a>
         </li>
         <br />
         <br />
@@ -158,12 +158,20 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            asd
-                        </div>
-                        <div class="card-footer">
-                        </div>
+                    <div class="table-container">
+                        <asp:GridView ID="GridFinal" CssClass="customers" runat="server" AutoGenerateColumns="false">
+                            <Columns>
+                                <asp:BoundField DataField="ID" HeaderText="Index" />
+                                <asp:TemplateField HeaderText="Certificate Number">
+                                    <ItemTemplate>
+                                        <%# "ANC00853" + Eval("ID")%>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:BoundField DataField="USN" HeaderText="USN" />
+                                <asp:BoundField DataField="Name" HeaderText="Name" />
+                                <asp:BoundField DataField="Description" HeaderText="Description" />
+                            </Columns>
+                        </asp:GridView>
                     </div>
                 </div>
             </div>
