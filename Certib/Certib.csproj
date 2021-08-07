@@ -73,6 +73,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dashboard\configuration.txt" />
     <Content Include="dashboard\approval.aspx" />
     <Content Include="dashboard\certificate.aspx" />
     <Content Include="dashboard\misccertificate.aspx" />
@@ -84,7 +85,7 @@
     <Content Include="error.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\script.py" />
-    <Content Include="Images\encode.py" />
+    <Content Include="Images\template.png" />
     <Content Include="login.aspx" />
     <Content Include="Resource\Images\certificate\bg14.png" />
     <Content Include="Resource\Images\certificate\ribbon3.png" />
@@ -143,7 +144,7 @@
     <Content Include="Resource\Styles\certificate.css" />
     <Content Include="Resource\Styles\styles.css" />
     <Content Include="Resource\Styles\styles1.css" />
-    <Content Include="Resource\Templates\template.jpg" />
+    <Content Include="Resource\Templates\template.png" />
     <Content Include="verification.aspx" />
     <Content Include="view.aspx" />
     <Content Include="Web.config" />

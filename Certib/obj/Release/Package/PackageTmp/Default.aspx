@@ -1,35 +1,19 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Certib_1A.Default" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Certib.Default" %>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-
-    <!-- -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6W6HWNWGV9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-6W6HWNWGV9');
-    </script>
-
-
     <!-- TITLE -->
     <title>HOME&nbsp&nbsp|&nbsp&nbsp Certib
     </title>
     <!-- MOBILE VIEW ADJUSTMENT TAG -->
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!-- FAVICON ICON -->
-    <link rel="icon" type="image/png" href="Resource/Images/logo.png">
-    <!-- FONTS  & ICONS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons|Pacifico&display=swap" type="text/css" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" href="Resource/Styles/styles.css" />
+    <link href="Resource/Styles/styles1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="index-page sidebar-collapse">
@@ -39,11 +23,11 @@
                 <div class="navbar-translate">
                     <div>
                         <div style="float: left; padding-right: 10px;">
-                            <img id="logoid" src="Resource/Images/logo.png" height="60" />
+                            <img src="Resource/Images/logo.png" height="60" />
                         </div>
                         <div style="float: right; padding-top: 10px;">
-                            <a id="bmsit1" class="bmsit-text">BMS</a><br />
-                            <a id="bmsit2" class="bmsit-text-s">INSTITUTE OF TECHNOLOGY</a>
+                            <a style="font-family: Arial; font-size: 32px; color: #d30000; font-weight: 600">BMS</a><br />
+                            <a style="font-family: Calibri; color: #363491; font-size: 22px; font-weight: 600">INSTITUTE OF TECHNOLOGY</a>
                         </div>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,98 +40,105 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="Login">
+                            <a class="nav-link" href="login">
                                 <i class="material-icons">perm_identity</i> Login
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <i class="material-icons">info</i> About
+                                <i class="material-icons">admin_panel_settings</i> Verify
                             </a>
                         </li>
+                      
                     </ul>
                 </div>
             </div>
         </nav>
+
         <div class="page-header" style="height: 100vh; background-image: url('Resource/Images/main-bg/bg13.jpg');">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
-                        <div class="brand">
-                            <h1>Certib</h1>
-                            <h3>A Digital Certificate portal.</h3>
-                            <button class="btn btn-warning">Know more</button>
+                        <div class="brand" style="font-size:50px;">
+                            <h2 style="font-weight:600;">BLOCKCHAIN CERTIFICATE MANAGEMENT SYSTEM WITH IMAGE STEGANOGRAPHY
+</h2>
+                            <h3>Under the Guidance of Dr. USHA B A</h3>
+                            <br />
+                            <a href="verification" class="btn btn-warning">
+                                <i class="material-icons">fingerprint&nbsp;&nbsp;</i>Verify Certificate</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="main main-raised">
-            <div class="section section-feature">
-                <div class="container">
-                    <div class="container-fluid text-center">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="feature-tab">
-                                    <h4 style="color: red;"><b><i class="material-icons md-48">fingerprint</i></b></h4>
-                                    <p>
-                                        This portal provides high data security for personal information.
+            <section id="info-section">
+                <div class="section section-feature">
+                    <div class="container">
+                        <div class="container-fluid text-center">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="feature-tab">
+                                        <h4 style="color: red;"><b><i class="material-icons md-48">fingerprint</i></b></h4>
+                                        <p>
+                                            This portal provides high data security for personal information.
                                         The certificates issued from the portal cannot be fabricated as
                                         we use blockchain technology and provide various levels of authentication.
-                                    </p>
+                                        </p>
+                                    </div>
+                                    <br />
                                 </div>
-                                <br />
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature-tab">
-                                    <h4 style="color: #808080;"><b class="feature-icon"><i class="material-icons md-48">swap_horiz</i></b></h4>
-                                    <p>
-                                        The portal can be accessed from all types of devices with varying
+                                <div class="col-md-4">
+                                    <div class="feature-tab">
+                                        <h4 style="color: #808080;"><b class="feature-icon"><i class="material-icons md-48">swap_horiz</i></b></h4>
+                                        <p>
+                                            The portal can be accessed from all types of devices with varying
                                         screen sizes. It's highly responsive on all platforms.
-                                    </p>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature-tab">
-                                    <h4 style="color: #af3ae2;"><b><i class="material-icons md-48">autorenew</i></b></h4>
-                                    <p>
-                                        The system automatically generates certificates on completion of
+                                <div class="col-md-4">
+                                    <div class="feature-tab">
+                                        <h4 style="color: #af3ae2;"><b><i class="material-icons md-48">autorenew</i></b></h4>
+                                        <p>
+                                            The system automatically generates certificates on completion of
                                         the event.
-                                    </p>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <br />
-                        <br />
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="feature-tab">
-                                    <h4 style="color: #ff6a00;"><b><i class="material-icons md-48">touch_app</i></b></h4>
-                                    <p>
-                                        Efficient user interface design and usability option. The portal also
+                            <br />
+                            <br />
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="feature-tab">
+                                        <h4 style="color: #ff6a00;"><b><i class="material-icons md-48">touch_app</i></b></h4>
+                                        <p>
+                                            Efficient user interface design and usability option. The portal also
                                         gives high performance.
-                                    </p>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature-tab">
-                                    <h4 style="color: #0278c1"><b><i class="material-icons md-48">headset_mic</i></b></h4>
-                                    <p>
-                                        The portal includes a one click access to phone number and email-id
+                                <div class="col-md-4">
+                                    <div class="feature-tab">
+                                        <h4 style="color: #0278c1"><b><i class="material-icons md-48">headset_mic</i></b></h4>
+                                        <p>
+                                            The portal includes a one click access to phone number and email-id
                                         for any of your queries.
-                                    </p>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature-tab">
-                                    <h4 style="color: #079619;"><b><i class="material-icons md-48">verified_user</i></b></h4>
-                                    <p>Content goes here </p>
+                                <div class="col-md-4">
+                                    <div class="feature-tab">
+                                        <h4 style="color: #079619;"><b><i class="material-icons md-48">verified_user</i></b></h4>
+                                        <p>Content goes here </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <div>
             <footer>
@@ -194,7 +185,7 @@
         <script src="Resource/Scripts/core/jquery.min.js" type="text/javascript"></script>
         <script src="Resource/Scripts/core/popper.min.js" type="text/javascript"></script>
         <script src="Resource/Scripts/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-        <script src="Resource/Scripts/silicon.js" type="text/javascript"></script>
+        <script src="Resource/Scripts/material-kit.mind1f1.js"></script>
     </form>
 </body>
 </html>

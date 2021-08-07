@@ -135,10 +135,13 @@ namespace Certib.dashboard
                 File.WriteAllBytes(saveto, convertedToBytes);
 
                 var PythonEncode = new ProcessStartInfo();
-                PythonEncode.FileName = @"C:\Users\prash\AppData\Local\Programs\Python\Python39\python.exe";
-                var Encodescript = @"D:\Project\certib\Certib\Images\script.py";
+
+                string[] system_configuration = File.ReadAllLines(HttpContext.Current.Server.MapPath("configuration.txt"));
+
+                PythonEncode.FileName = @system_configuration[0];
+                var Encodescript = @system_configuration[1];
                 var argument0 = 1;
-                var argument1 = @"D:\Project\certib\Certib\Images\"+ imagefile + ".png";
+                var argument1 = @system_configuration[2] + imagefile + ".png";
                 var argument2 = certificateNo + "#" + hash;
 
                 PythonEncode.Arguments = $"\"{Encodescript}\" \"{argument0}\" \"{argument1}\" \"{argument2}\"";

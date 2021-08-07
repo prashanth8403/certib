@@ -1,4 +1,35 @@
 
+#_userid {
+    border-color: #0072bb;
+}
+
+
+.validation-class-text {
+    color: #ff0000;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size:15px;
+    text-align: center;
+}
+
+.validation-container {
+    
+    margin-left:50px;
+    position:absolute;
+    padding: 5px 5px 5px 5px;
+}
+
+.error-label {
+    color: rgb(198,72,101);
+    font-family: Roboto;
+    font-weight: 400;
+  
+    background-color: rgb(250,221,224);
+    padding:5px 5px 5px 5px;
+    font-size:14px;
+    border:1px solid #f44336;
+    text-align: center;
+}
 
 #bmsit1 {
     color: #d30000;

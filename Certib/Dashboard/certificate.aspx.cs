@@ -48,7 +48,6 @@ namespace Certib.Dashboard
                 DetailsPanel.Visible = true;
                 PrevButton.Visible = false;
             }
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -70,7 +69,7 @@ namespace Certib.Dashboard
                 try
                 {
                     MySqlConnection connect = new MySqlConnection(ConfigurationManager.ConnectionStrings["CertibConnect"].ConnectionString);
-                    string index_query = "SELECT COUNT(*) FROM CERTIFICATE";
+                    string index_query = "SELECT COUNT(*) FROM CERTIFICATE;";
                     connect.Open();
                     MySqlCommand Process0 = new MySqlCommand(index_query, connect);
                     int certificate_id = Convert.ToInt32(Process0.ExecuteScalar()) + 1;
@@ -84,18 +83,18 @@ namespace Certib.Dashboard
                         "'" + Description.Text + "'," +
                         "0," +
                         "'" + stringjson + "'," +
-                        ""+Authority.SelectedValue+"," +
+                        "'0'," +
                         "'"+ AlgorithmType.SelectedValue + "');";
                     MySqlCommand Process1 = new MySqlCommand(insert_query, connect);
                     Process1.ExecuteNonQuery();
                     connect.Close();
                     SucessPanel.Visible = true;
+                    Session["CertificateWizard"] = "1";
                 }
                 catch (Exception error)
                 {
                     SucessPanel.Visible = true;
                     SuccessMessage.Text = error.Message;
-                    //ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "alert", "alert('" + error.Message + "');", true);
                 }
             }
 

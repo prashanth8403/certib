@@ -1,0 +1,3 @@
+C:\Users\prash\AppData\Local\Programs\Python\Python39\python.exe
+D:\Project\certib\Certib\Images\script.py
+D:\Project\certib\Certib\Images\
