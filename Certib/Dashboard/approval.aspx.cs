@@ -20,7 +20,6 @@ namespace Certib.dashboard
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (!IsPostBack)
             {
                 try
@@ -43,7 +42,6 @@ namespace Certib.dashboard
                 SucessPanel.Visible = false;
                 ViewPanel.Visible = false;
             }
-                
             GridLoad();
         }
 
