@@ -1,0 +1,30 @@
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\bin\Debug\ServerPlus.exe.config
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\bin\Debug\ServerPlus.exe
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\bin\Debug\ServerPlus.pdb
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\obj\Debug\ServerPlus.csprojAssemblyReference.cache
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\obj\Debug\ServerPlus.Core.resources
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\obj\Debug\ServerPlus.Properties.Resources.resources
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\obj\Debug\ServerPlus.csproj.GenerateResource.cache
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\obj\Debug\ServerPlus.exe
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\obj\Debug\ServerPlus.pdb
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\obj\Debug\ServerPlus.csproj.CopyComplete
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\obj\Debug\ServerPlus.Performance.resources
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\bin\Debug\Bunifu.Core.dll
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\bin\Debug\BunifuDataViz.dll
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\obj\Debug\ServerPlus.Dashboard.resources
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\obj\Debug\ServerPlus.MailServer.resources
+C:\Users\PRASHANTH KUMAR\source\PBL Final\ServerPlus\ServerPlus\obj\Debug\ServerPlus.DatabaseServer.resources
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.csprojAssemblyReference.cache
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.Core.resources
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.Dashboard.resources
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.DatabaseServer.resources
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.Performance.resources
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.Properties.Resources.resources
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.csproj.GenerateResource.cache
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.exe
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.pdb
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\bin\Debug\ServerPlus.exe.config
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\bin\Debug\ServerPlus.exe
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\bin\Debug\ServerPlus.pdb
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.csproj.CopyComplete

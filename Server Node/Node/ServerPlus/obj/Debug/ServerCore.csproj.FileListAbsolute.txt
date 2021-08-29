@@ -1,0 +1,16 @@
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\bin\Debug\ServerCore.exe.config
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\bin\Debug\ServerCore.exe
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\bin\Debug\ServerCore.pdb
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.Core.resources
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.Dashboard.resources
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.DatabaseServer.resources
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerPlus.Performance.resources
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerCore.Properties.Resources.resources
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerCore.csproj.GenerateResource.cache
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerCore.csproj.CopyComplete
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerCore.exe
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerCore.pdb
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\obj\Debug\ServerCore.csprojAssemblyReference.cache
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\bin\Debug\MySql.Data.dll
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\bin\Debug\Google.Protobuf.dll
+D:\Projects\PU-DTC2020\ServerPlus\ServerPlus\bin\Debug\MySql.Data.xml
