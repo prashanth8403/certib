@@ -47,15 +47,21 @@
             <div class="collapse" id="Certificates">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="Certificate">
+                        <a class="nav-link" href="certificate">
                             <span class="sidebar-mini"><i class="material-icons">description</i></span>
                             <span class="sidebar-normal">Degree Certificate </span>
                         </a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="misccertificate">
+                    <li class="nav-item">
+                        <a class="nav-link" href="achivement">
                             <span class="sidebar-mini"><i class="material-icons">view_module</i></span>
-                            <span class="sidebar-normal">Appreciation Certificate </span>
+                            <span class="sidebar-normal">Achivement Certificate </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="participation">
+                            <span class="sidebar-mini"><i class="material-icons">view_module</i></span>
+                            <span class="sidebar-normal">Participation Certificate </span>
                         </a>
                     </li>
                 </ul>
@@ -164,7 +170,7 @@
                                 <asp:BoundField DataField="ID" HeaderText="Index" />
                                 <asp:TemplateField HeaderText="Certificate Number">
                                     <ItemTemplate>
-                                        <%# "ANC00853" + Eval("ID")%>
+                                        <%# Convert.ToInt32(Eval("type")) == 0 ? "ANC00853"+Eval("ID") : Convert.ToInt32(Eval("type"))==1?"JBT00700"+Eval("ID") :"SPRT0500"+Eval("ID")   %>
                                     </ItemTemplate>
                                 </asp:TemplateField>
                                 <asp:BoundField DataField="USN" HeaderText="USN" />

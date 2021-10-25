@@ -73,10 +73,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dashboard\participation.aspx" />
     <Content Include="dashboard\configuration.txt" />
     <Content Include="dashboard\approval.aspx" />
     <Content Include="dashboard\certificate.aspx" />
-    <Content Include="dashboard\misccertificate.aspx" />
+    <Content Include="dashboard\achivement.aspx" />
     <Content Include="dashboard\mypage.aspx" />
     <Content Include="dashboard\password_changer.aspx" />
     <Content Include="dashboard\Profile.aspx" />
@@ -150,6 +151,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboard\participation.aspx.cs">
+      <DependentUpon>participation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard\participation.aspx.designer.cs">
+      <DependentUpon>participation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="dashboard\approval.aspx.cs">
       <DependentUpon>approval.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -171,12 +179,12 @@
     <Compile Include="dashboard\Dashboard.Master.designer.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
     </Compile>
-    <Compile Include="dashboard\misccertificate.aspx.cs">
-      <DependentUpon>misccertificate.aspx</DependentUpon>
+    <Compile Include="dashboard\achivement.aspx.cs">
+      <DependentUpon>achivement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="dashboard\misccertificate.aspx.designer.cs">
-      <DependentUpon>misccertificate.aspx</DependentUpon>
+    <Compile Include="dashboard\achivement.aspx.designer.cs">
+      <DependentUpon>achivement.aspx</DependentUpon>
     </Compile>
     <Compile Include="dashboard\mypage.aspx.cs">
       <DependentUpon>mypage.aspx</DependentUpon>

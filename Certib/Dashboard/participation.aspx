@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Certificate" Language="C#" UnobtrusiveValidationMode="None" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="certificate.aspx.cs" Inherits="Certib.Dashboard.Certificate1" %>
+﻿<%@ Page Title="Apprecitation Certificate" Language="C#" MasterPageFile="~/dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="participation.aspx.cs" Inherits="Certib.dashboard.participationcertificate" %>
 
 <asp:Content ID="SideBar" ContentPlaceHolderID="SideBar" runat="server">
     <div class="user">
@@ -15,7 +15,7 @@
                 </a>
                 <div class="collapse" id="UserCollapse">
                     <ul class="nav">
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link" href="Profile">
                                 <span class="sidebar-mini"><i class="material-icons">person</i></span>
                                 <span class="sidebar-normal">User Profile </span>
@@ -46,7 +46,7 @@
             </a>
             <div class="collapse show" id="Certificates">
                 <ul class="nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="certificate">
                             <span class="sidebar-mini"><i class="material-icons">description</i></span>
                             <span class="sidebar-normal">Degree Certificate </span>
@@ -54,18 +54,19 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="achivement">
-                            <span class="sidebar-mini"><i class="material-icons">description</i></span>
+                            <span class="sidebar-mini"><i class="material-icons">view_module</i></span>
                             <span class="sidebar-normal">Achivement Certificate </span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="participation">
-                            <span class="sidebar-mini"><i class="material-icons">description</i></span>
+                            <span class="sidebar-mini"><i class="material-icons">view_module</i></span>
                             <span class="sidebar-normal">Participation Certificate </span>
                         </a>
                     </li>
                 </ul>
             </div>
+
         </li>
         <li class="nav-item">
             <a class="nav-link" href="approval">
@@ -92,7 +93,7 @@
                         <br />
                         <br />
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title">Academic Certificate Form (A97) -
+                            <h4 class="card-title">Achivement Certificate Form  -
                                     <small class="category">fill out the following details</small>
                             </h4>
                         </div>
@@ -138,20 +139,10 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label class="bmd-label-floating">Secured Marks</label><br />
-                                                    <asp:TextBox CssClass="short-text" ID="Marks" runat="server"></asp:TextBox>
-                                                    of 
-                                        <asp:TextBox CssClass="short-text" ID="MaxMarks" runat="server"></asp:TextBox>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="bmd-label-floating">Passing Year</label><br />
-                                                    <asp:TextBox CssClass="short-text" ID="StartYear" runat="server"></asp:TextBox>
-                                                    to 
-                                        <asp:TextBox CssClass="short-text" ID="EndYear" runat="server"></asp:TextBox>
+                                                    <label class="bmd-label-floating">Achivment/Appreciation</label>
+                                                    <asp:TextBox ID="Participation" class="form-control" runat="server"></asp:TextBox>
                                                 </div>
                                             </div>
                                         </div>
@@ -178,17 +169,6 @@
                                         </div>
                                         <br />
                                         <br />
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <asp:DropDownList class="form-control" ID="AlgorithmType" runat="server">
-                                                        <asp:ListItem Value="0">Select Steganography Method</asp:ListItem>
-                                                        <asp:ListItem Value="1">LSB Image Steganography</asp:ListItem>
-                                                        <asp:ListItem Value="2">Integer WaveLet Steganography</asp:ListItem>
-                                                    </asp:DropDownList>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <br />
                                         <br />
                                         <div class="row">

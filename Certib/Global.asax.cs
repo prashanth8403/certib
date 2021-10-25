@@ -23,7 +23,8 @@ namespace Certib
             routes.MapPageRoute("view", "view", "~/view.aspx");
             routes.MapPageRoute("verification", "verification", "~/verification.aspx");
             routes.MapPageRoute("dashboard/approval", "dashboard/approval", "~/dashboard/approval.aspx");
-            routes.MapPageRoute("dashboard/misccertificate", "dashboard/misccertificate", "~/dashboard/misccertificate.aspx");
+            routes.MapPageRoute("dashboard/achivement", "dashboard/achivement", "~/dashboard/achivement.aspx");
+            routes.MapPageRoute("dashboard/participation", "dashboard/participation", "~/dashboard/participation.aspx");
             routes.MapPageRoute("dashboard/mypage", "dashboard/Mypage", "~/dashboard/mypage.aspx");
             routes.MapPageRoute("dashboard/certificate", "dashboard/certificate", "~/dashboard/certificate.aspx");
             routes.MapPageRoute("dashboard/settings", "dashboard/settings", "~/dashboard/settings.aspx");

@@ -53,9 +53,15 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="misccertificate">
+                        <a class="nav-link" href="achivement">
                             <span class="sidebar-mini"><i class="material-icons">view_module</i></span>
-                            <span class="sidebar-normal">Appreciation Certificate </span>
+                            <span class="sidebar-normal">Achivement Certificate </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="participation">
+                            <span class="sidebar-mini"><i class="material-icons">view_module</i></span>
+                            <span class="sidebar-normal">Participation Certificate </span>
                         </a>
                     </li>
                 </ul>
@@ -101,7 +107,7 @@
                                                             <asp:BoundField DataField="ID" HeaderText="Index" />
                                                             <asp:TemplateField HeaderText="Certificate Number">
                                                                 <ItemTemplate>
-                                                                    <%# "ANC00853" + Eval("ID")%>
+                                                                   <%# Convert.ToInt32(Eval("type")) == 0 ? "ANC00853"+Eval("ID") : Convert.ToInt32(Eval("type"))==1?"JBT00700"+Eval("ID") :"SPRT0500"+Eval("ID")   %>
                                                                 </ItemTemplate>
                                                             </asp:TemplateField>
                                                             <asp:BoundField DataField="USN" HeaderText="USN" />
@@ -115,7 +121,7 @@
                                         </div>
 
                                     </asp:Panel>
-                                    <asp:Panel ID="ViewPanel" runat="server">
+                                    <asp:Panel ID="degreecertificate" runat="server">
                                         <div class="update-progress">
                                             <div class="modal-load">
                                                 <div id="modal2" class="modal-content">
@@ -173,6 +179,123 @@
                                                     <div class="footer" style="position: center; margin-left: auto; margin-right: auto;">
                                                         <asp:Button ID="ApprovalButton" CssClass="btn btn-primary" runat="server" Text="Approve" OnClick="ApprovalButton_Click" />
                                                         <asp:Button ID="CancelButton" CssClass="btn btn-default" runat="server" Text="Cancel" OnClick="CancelButton_Click" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </asp:Panel>
+                                    <asp:Panel ID="achivementcertificate" runat="server">
+                                        <div class="update-progress">
+                                            <div class="modal-load">
+                                                <div id="modal2" class="modal-content">
+                                                    <div class="certificate-web-template">
+                                                        <div class="certificate-header">
+                                                            <div style="max-width: 320px;">
+                                                                <div style="float: left; padding-right: 10px;">
+                                                                    <img id="logoid" src="../Resource/Images/logo.png" height="60" />
+                                                                </div>
+                                                                <div style="float: right; padding-top: 10px;">
+                                                                    <a id="bmsit1" class="bmsit-text">BMS</a><br />
+                                                                    <a id="bmsit2" class="bmsit-text-s">INSTITUTE OF TECHNOLOGY</a>
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                            <br />
+                                                            <br />
+                                                            <br />
+                                                            <a style="font-family: Arial; font-size: 20px; color: #722806">Certificate No: 
+                                                                <a style="text-justify: inter-word; font-family: 'Nirmala UI'; color: #15202b; font-weight: 600; font-size: 18px;">
+                                                                    <asp:Label ID="achivementcertificateno" runat="server" Text="ANC-00853-01"></asp:Label></a>
+                                                            </a>
+                                                            <br />
+                                                            <a style="font-family: Arial; font-size: 20px; color: #722806">Date : 
+                                                                <a style="text-justify: inter-word; font-family: 'Nirmala UI'; color: #15202b; font-weight: 600; font-size: 18px;">
+                                                                    <asp:Label ID="achivementcertificatedate" runat="server" Text="ANC-00853-01"></asp:Label></a>
+                                                            </a>
+                                                            <br />
+
+                                                            <div style="justify-content: center; text-align: center; width: 100%;">
+                                                                <a style="font-family: Arial; color: #0094ff; font-size: 35px;">Certificate of Achivement</a><br />
+                                                                <div style="margin-left: auto; margin-right: auto; position: center;"><a style="font-family: 'Nirmala UI'; color: #15202b; font-size: 20px;">is awarded to</a></div>
+                                                            </div>
+                                                            <br />
+                                                            <p style="width: 60%; margin-left: auto; text-align: center; margin-right: auto;">
+                                                                <a style="text-justify: inter-word; font-family: 'Nirmala UI'; color: #15202b; font-weight: 600; font-size: 25px;">
+                                                                    <asp:Label ID="achivementname" runat="server" Text="PRASHANTH KUMAR"></asp:Label><asp:Label ID="achivmentusn" runat="server" Text="PRASHANTH KUMAR"></asp:Label></a>
+                                                                <br />
+
+                                                                <a style="text-justify: inter-word; font-family: 'Nirmala UI'; color: #15202b; font-weight: 600; font-size: 20px;">
+                                                                    <asp:Label ID="achivment" runat="server" Text="IEEE Paper"></asp:Label></a><br />
+                                                                <a style="font-size: 20px;">is honoured certificate from</a><br />
+                                                                <a style="font-size: 20px;">BMS Institute of Technology</a><br />
+                                                                <br />
+                                                                <br />
+                                                                <a style="text-justify: inter-word; font-family: 'Nirmala UI'; color: #15202b; font-weight: 600; font-size: 20px;">
+                                                                    <asp:Label ID="achivmenetacademicyear" runat="server" Text="2017-2021"></asp:Label></a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer" style="position: center; margin-left: auto; margin-right: auto;">
+                                                        <asp:Button ID="Button2" CssClass="btn btn-primary" runat="server" Text="Approve" OnClick="ApprovalButton_Click" />
+                                                        <asp:Button ID="Button3" CssClass="btn btn-default" runat="server" Text="Cancel" OnClick="CancelButton_Click" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </asp:Panel>
+                                    <asp:Panel ID="participationcertificate" runat="server">
+                                        <div class="update-progress">
+                                            <div class="modal-load">
+                                                <div id="modal2" class="modal-content">
+                                                    <div class="certificate-web-template">
+                                                        <div class="certificate-header">
+                                                            <div style="max-width: 320px;">
+                                                                <div style="float: left; padding-right: 10px;">
+                                                                    <img id="logoid" src="../Resource/Images/logo.png" height="60" />
+                                                                </div>
+                                                                <div style="float: right; padding-top: 10px;">
+                                                                    <a id="bmsit1" class="bmsit-text">BMS</a><br />
+                                                                    <a id="bmsit2" class="bmsit-text-s">INSTITUTE OF TECHNOLOGY</a>
+                                                                </div>
+                                                            </div>
+                                                            <br />
+                                                            <br />
+                                                            <br />
+                                                            <br />
+                                                            <a style="font-family: Arial; font-size: 20px; color: #722806">Certificate No: 
+                                                                <a style="text-justify: inter-word; font-family: 'Nirmala UI'; color: #15202b; font-weight: 600; font-size: 18px;">
+                                                                    <asp:Label ID="ParticipationCertificateNo" runat="server" Text="ANC-00853-01"></asp:Label></a>
+                                                            </a>
+                                                            <br />
+                                                            <a style="font-family: Arial; font-size: 20px; color: #722806">Date : 
+                                                                <a style="text-justify: inter-word; font-family: 'Nirmala UI'; color: #15202b; font-weight: 600; font-size: 18px;">
+                                                                    <asp:Label ID="ParticipationCertificateDate" runat="server" Text="ANC-00853-01"></asp:Label></a>
+                                                            </a>
+                                                            <br />
+
+                                                            <div style="justify-content: center; text-align: center; width: 100%;">
+                                                                <a style="font-family: Monotype Corsiva; color: #0094ff; font-size: 35px;">Certificate of Participation</a><br />
+                                                                <div style="margin-left: auto; margin-right: auto; position: center;"><a style="font-family: 'Nirmala UI'; color: #15202b; font-size: 20px;">is awarded to</a></div>
+                                                            </div>
+                                                            <br />
+                                                            <p style="width: 60%; margin-left: auto; text-align: center; margin-right: auto;">
+                                                                <a style="text-justify: inter-word; font-family: 'Nirmala UI'; color: #15202b; font-weight: 600; font-size: 25px;">
+                                                                    <asp:Label ID="participationname" runat="server" Text="PRASHANTH KUMAR"></asp:Label><asp:Label ID="participationUSN" runat="server" Text="PRASHANTH KUMAR"></asp:Label></a>
+                                                                <br />
+                                                                <a style="text-justify: inter-word; font-family: 'Nirmala UI'; color: #15202b; font-weight: 600; font-size: 20px;">
+                                                                    <asp:Label ID="participation" runat="server" Text="IEEE Paper"></asp:Label></a><br />
+                                                                <a style="font-size: 20px;">is awarded participation certificate from</a><br />
+                                                                <a style="font-size: 20px;">BMS Institute of Technology</a><br />
+                                                                <br />
+                                                                <br />
+                                                                <a style="text-justify: inter-word; font-family: 'Nirmala UI'; color: #15202b; font-weight: 600; font-size: 20px;">
+                                                                    <asp:Label ID="participationyear" runat="server" Text="2017-2021"></asp:Label></a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer" style="position: center; margin-left: auto; margin-right: auto;">
+                                                        <asp:Button ID="Button4" CssClass="btn btn-primary" runat="server" Text="Approve" OnClick="ApprovalButton_Click" />
+                                                        <asp:Button ID="Button5" CssClass="btn btn-default" runat="server" Text="Cancel" OnClick="CancelButton_Click" />
                                                     </div>
                                                 </div>
                                             </div>
