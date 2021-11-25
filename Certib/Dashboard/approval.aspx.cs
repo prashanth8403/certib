@@ -183,7 +183,7 @@ namespace Certib.dashboard
                     PythonEncode.Arguments = $"\"{Encodescript}\" \"{argument0}\" \"{argument1}\" \"{argument2}\"";
 
                     PythonEncode.UseShellExecute = false;
-                    PythonEncode.CreateNoWindow = true;
+                    PythonEncode.CreateNoWindow = false;
                     PythonEncode.RedirectStandardOutput = true;
                     PythonEncode.RedirectStandardError = true;
 
@@ -208,6 +208,10 @@ namespace Certib.dashboard
 
                     using (var process = Process.Start(PythonEncode))
                     {
+                        using(StreamReader read = process.StandardOutput)
+                        {
+                            string result = read.ReadToEnd();
+                        }
                         errors = process.StandardError.ReadToEnd();
                         results = process.StandardOutput.ReadToEnd();
                     }

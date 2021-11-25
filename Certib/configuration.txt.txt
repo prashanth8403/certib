@@ -1,0 +1,2 @@
+C:\Users\prash\AppData\Local\Programs\Python\Python39\python.exe
+Images\script.py
