@@ -72,7 +72,7 @@ namespace Certib.Dashboard
                     string index_query = "SELECT COUNT(*) FROM CERTIFICATE;";
                     connect.Open();
                     MySqlCommand Process0 = new MySqlCommand(index_query, connect);
-                    int certificate_id = Convert.ToInt32(Process0.ExecuteScalar()) + 1;
+                    int certificate_id = Convert.ToInt32(Process0.ExecuteScalar()) + 2;
                     AcademicCertificate certificate = new AcademicCertificate(certificate_id, Convert.ToInt32(Marks.Text),
                     Convert.ToInt32(MaxMarks.Text), FullName.Text, Email.Text, Usn.Text, Remarks.Text, StartYear.Text + "-" + EndYear.Text,department_selection.SelectedValue);
                     string stringjson = JsonConvert.SerializeObject(certificate);

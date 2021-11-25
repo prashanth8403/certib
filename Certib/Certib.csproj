@@ -468,7 +468,7 @@
           <CustomServerUrl>
           </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
-          <servers defaultServer="">
+          <servers defaultServer="SelfHostServer">
             <server name="SelfHostServer" exePath="" cmdArgs="" url="http://localhost:52895/" workingDir="" />
           </servers>
         </WebProjectProperties>

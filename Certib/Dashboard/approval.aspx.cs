@@ -297,7 +297,7 @@ namespace Certib.dashboard
                 else
                 {
                     string root = HttpContext.Current.Server.MapPath("~/Resource/Templates/template3.png");
-                    System.Drawing.Image bitmap = (System.Drawing.Image)Bitmap.FromFile(root); // set image     
+                    Image bitmap = (Image)Bitmap.FromFile(root); // set image     
                     Font font = new Font("Arial", 25, FontStyle.Bold, GraphicsUnit.Pixel);
                     Color color = Color.FromArgb(255, 0, 0, 0);
 
@@ -382,11 +382,12 @@ namespace Certib.dashboard
 
                 /*Update Status*/
                 string query = "UPDATE CERTIFICATE SET STATUS=1 WHERE ID=" + id;
+                Debug.WriteLine(query);
                 connect.Open();
                 MySqlCommand SqlProcess1 = new MySqlCommand(query, connect);
                 SqlProcess1.ExecuteNonQuery();
                 connect.Close();
-
+                
                 degreecertificate.Visible = false;
                 SucessPanel.Visible = true;
                 /*Grid Load*/
@@ -396,22 +397,29 @@ namespace Certib.dashboard
             catch (Exception ex)
             {
                 certificateno.Text = ex.Message;
+                Debug.WriteLine(ex.Message);
             }
         }
 
         public void RemoteSend(string data)
         {
-            string _CONFIGURATION_DATA_ = File.ReadAllText(Modules.Configuration.CONFIGPATH);
-            JObject ConfigurationData = JObject.Parse(_CONFIGURATION_DATA_);
-            JArray ConfigItem = (JArray)ConfigurationData["CONFIGURATION"];
-            string timestamp = DateTime.Now.ToString("yyyyMMddHHmmssffff");
-            string Data = data + "$" + timestamp;
+            try {
+                string _CONFIGURATION_DATA_ = File.ReadAllText(Modules.Configuration.CONFIGPATH);
+                JObject ConfigurationData = JObject.Parse(_CONFIGURATION_DATA_);
+                JArray ConfigItem = (JArray)ConfigurationData["CONFIGURATION"];
+                string timestamp = DateTime.Now.ToString("yyyyMMddHHmmssffff");
+                string Data = data + "$" + timestamp;
 
-            for (int i = 0; i < ConfigItem.Count; i++)
+                for (int i = 0; i < ConfigItem.Count; i++)
+                {
+                    int PORT_NO = Modules.Configuration.FetchPort(i);
+                    string SERVER_IP = Modules.Configuration.FetchServer(i);
+                    SendData(SERVER_IP, Data, PORT_NO);
+                }
+            }
+            catch(Exception ex)
             {
-                int PORT_NO = Modules.Configuration.FetchPort(i);
-                string SERVER_IP = Modules.Configuration.FetchServer(i);
-                SendData(SERVER_IP, Data, PORT_NO);
+                Debug.WriteLine(ex.Message);
             }
         }
 

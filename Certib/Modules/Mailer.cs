@@ -94,7 +94,7 @@ namespace Certib.Modules
             }
             catch (Exception MX2)
             {
-                Console.WriteLine(MX2.Message);
+                System.Diagnostics.Debug.WriteLine(MX2.Message);
             }
         }
     }
